@@ -14,6 +14,8 @@ permalink: /resources/
 
 [The Ultimate Command Cheat Sheet for Metasploit&#39;s Meterpreter](https://null-byte.wonderhowto.com/how-to/hack-like-pro-ultimate-command-cheat-sheet-for-metasploits-meterpreter-0149146/)
 
+[Pentest CheatSheet](https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/)
+
 ## Recon / Enumeration
 
 [Enumeration checklist](http://www.0daysecurity.com/penetration-testing/enumeration.html)
