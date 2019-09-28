@@ -16,4 +16,4 @@ I work as a penetration tester and I’ll try to centralize here all the tools, 
 
 ## License
 
-MIT
+CC
