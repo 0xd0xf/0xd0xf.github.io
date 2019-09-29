@@ -32,6 +32,8 @@ permalink: /resources/
 
 [GitHub - sagishahar/lpeworkshop: Windows / Linux Local Privilege Escalation Workshop](https://github.com/sagishahar/lpeworkshop)
 
+[Windows Privilege Escalation - OSCP Like](https://hackingandsecurity.blogspot.com/2017/09/oscp-windows-priviledge-escalation.html)
+
 ## General / Other
 
 [Pentesting tools theyknow ](https://prune2000.github.io/tools/pentest/) 
