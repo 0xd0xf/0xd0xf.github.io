@@ -30,9 +30,9 @@ title: Categories
       </article>
       {% endfor %}
       </div>
-      </div>
       <script>
       checkCategory("{{category_name}}")
       </script>
+      </div>
       {% endfor %}
     </div>
