@@ -16,6 +16,8 @@ permalink: /resources/
 
 [Pentest CheatSheet](https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/)
 
+[Nmap Cheatsheet](https://www.stationx.net/nmap-cheat-sheet/)
+
 ## Recon / Enumeration
 
 [Enumeration checklist](http://www.0daysecurity.com/penetration-testing/enumeration.html)
