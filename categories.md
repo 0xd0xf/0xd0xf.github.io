@@ -6,29 +6,34 @@ title: Categories
 
 
 <div id="archives">
-{% for category in site.categories %}
+  <script type="text/javascript">
+    function checkCategory(cat_name){
+      if(window.location.hash) {
+        var cat = window.location.hash.substring(1);
+        if (cat === cat_name){
+          document.getElementById("#"+cat_name).style.display = none;
+        }
+      }
+
+    }
+
+  </script>
+  {% for category in site.categories %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <div id="#{{ category_name | slugize }}">
-    
-    <h3 class="category-head">{{ category_name }}</h3>
-    <a name="{{ category_name | slugize }}"></a>
-    {% for post in site.categories[category_name] %}
-    <article class="archive-item">
+
+      <h3 class="category-head">{{ category_name }}</h3>
+      <a name="{{ category_name | slugize }}"></a>
+      {% for post in site.categories[category_name] %}
+      <article class="archive-item">
       <h4><a href="{{ site.baseurl }}{{ post.url }}">{% if post.title and post.title != "" %}{{post.title}}{% else %}{{post.excerpt |strip_html}}{%endif%}</a></h4>
-    </article>
-    {% endfor %}
+      </article>
+      {% endfor %}
+      </div>
     </div>
+    <script>
+    checkCategory({{category_name}})
+    </script>
+    {% endfor %}
   </div>
-  <script type="text/javascript">
-  if(window.location.hash) {
-    var cat = window.location.hash.substring(1);
-    if (cat === "{{ category_name}}"){
-      document.getElementById("#{{ category_name }}").style.display = none;
-    }
-} else {
-  // Fragment doesn't exist
-}
-</script>
-{% endfor %}
-</div>
