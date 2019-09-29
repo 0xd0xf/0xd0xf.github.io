@@ -62,6 +62,9 @@ header {
 
 .header-link {
   display: inline;
+  &:hover {
+      color:orange;
+  }
 }
 
 header h1 {
