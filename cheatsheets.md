@@ -12,7 +12,7 @@ permalink: /cheatsheets/
 
 ## HTTP Headers (Credit to Julia Evans)
 
-![HTTP Headers](/images/cheat-sheets/headers.png)
+![HTTP Headers](/images/cheat-sheets/headers.jpg)
 
 ## Some bash tricks
 
