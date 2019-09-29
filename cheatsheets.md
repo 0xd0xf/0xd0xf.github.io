@@ -25,7 +25,7 @@ permalink: /cheatsheets/
 ![WebApp](/images/cheat-sheets/webapp_methodology.jpg)
 
 ## Network
-![Networking Tools](/images/cheat-sheets/network_tools.jpg)
+![Networking Tools](/images/cheat-sheets/networking_tools.jpg)
 ![Networking Ports](/images/cheat-sheets/common_ports.jpg)
 
 ## Unix
