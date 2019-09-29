@@ -9,6 +9,7 @@ permalink: /cheatsheets/
 ## Nmap
 
 ![Nmap](/images/cheat-sheets/nmap.png)
+![Nmap Scripts](/images/cheat-sheets/nmap_scripts.png)
 
 ## HTTP Headers (Credit to Julia Evans)
 
