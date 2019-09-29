@@ -10,11 +10,10 @@ title: Categories
     function checkCategory(cat_name){
       if(window.location.hash) {
         var cat = window.location.hash.substring(1);
-        if (cat === cat_name){
+        if (cat !== cat_name){
           document.getElementById("#"+cat_name).style.display = "none";
         }
       }
-
     }
 
   </script>
@@ -31,9 +30,9 @@ title: Categories
       </article>
       {% endfor %}
       </div>
+      </div>
+      <script>
+      checkCategory({{category_name}})
+      </script>
+      {% endfor %}
     </div>
-    <script>
-    checkCategory({{category_name}})
-    </script>
-    {% endfor %}
-  </div>
