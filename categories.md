@@ -11,7 +11,7 @@ title: Categories
       if(window.location.hash) {
         var cat = window.location.hash.substring(1);
         if (cat === cat_name){
-          document.getElementById("#"+cat_name).style.display = none;
+          document.getElementById("#"+cat_name).style.display = "none";
         }
       }
 
