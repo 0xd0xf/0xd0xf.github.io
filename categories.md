@@ -20,5 +20,15 @@ title: Categories
     {% endfor %}
     </div>
   </div>
+  <script type="text/javascript">
+  if(window.location.hash) {
+    var cat = window.location.hash.substring(1);
+    if (cat === "{{ category_name}}"){
+      document.getElementById("#{{ category_name }}").style.display = none;
+    }
+} else {
+  // Fragment doesn't exist
+}
+</script>
 {% endfor %}
 </div>
