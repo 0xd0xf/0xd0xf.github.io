@@ -32,7 +32,7 @@ title: Categories
       </div>
       </div>
       <script>
-      checkCategory({{category_name}})
+      checkCategory("{{category_name}}")
       </script>
       {% endfor %}
     </div>
