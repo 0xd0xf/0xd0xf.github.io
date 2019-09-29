@@ -6,6 +6,7 @@ permalink: /cheatsheets/
 
 # Collection of some useful Cheat Sheets
 
+<div class="cheat-sheets">
 ## Nmap
 
 [![Nmap](/images/cheat-sheets/nmap.png)](/images/cheat-sheets/nmap.png)
@@ -41,3 +42,4 @@ permalink: /cheatsheets/
 
 ## CTF Basic tools
 [![CTF TOOLS](/images/cheat-sheets/ctf_tools.jpg)](/images/cheat-sheets/ctf_tools.jpg)
+</div>

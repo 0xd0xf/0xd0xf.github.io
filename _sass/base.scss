@@ -96,9 +96,14 @@ header h2 {
   width: 100%;
   -webkit-font-smoothing: antialiased;
 }
+
 section img {
+  max-width: 100%
+}
+
+.cheat-sheets img{
   max-width: 100%;
-  width: 50%
+  width: 75%;
 }
 
 h1, h2, h3, h4, h5, h6 {
