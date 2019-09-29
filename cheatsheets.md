@@ -16,6 +16,6 @@ permalink: /cheatsheets/
 
 ## Some bash tricks
 
-### Some useful tricks can also viewed on my blog post ![here](/linux_enumeration_tricks)
+### Some useful tricks can also viewed on my blog post [here]({% post_url 2019-09-28-linux_enumeration_tricks %})
 
 ![Bash Tricks](/images/cheat-sheets/tricks.jpg)
