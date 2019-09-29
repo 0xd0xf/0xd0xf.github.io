@@ -36,6 +36,8 @@ permalink: /resources/
 
 [Windows Privilege Escalation - OSCP Like](https://hackingandsecurity.blogspot.com/2017/09/oscp-windows-priviledge-escalation.html)
 
+[GTFOBins - Linux](https://gtfobins.github.io/)
+
 ## General / Other
 
 [Pentesting tools theyknow ](https://prune2000.github.io/tools/pentest/) 
