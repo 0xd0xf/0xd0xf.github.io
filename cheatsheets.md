@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Cheat Sheets
 permalink: /cheatsheets/
 ---
