@@ -12,11 +12,11 @@ permalink: /resources/
 
 [Reverse Shell Cheat Sheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
 
-[The Ultimate Command Cheat Sheet for Metasploit&#39;s Meterpreter](https://null-byte.wonderhowto.com/how-to/hack-like-pro-ultimate-command-cheat-sheet-for-metasploits-meterpreter-0149146/)
-
 [Pentest CheatSheet](https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/)
 
 [Nmap Cheatsheet](https://www.stationx.net/nmap-cheat-sheet/)
+
+[All CheatSheets](http://www.cheat-sheets.org/)
 
 ## Recon / Enumeration
 
@@ -28,7 +28,7 @@ permalink: /resources/
 
 ## Privilege Escalation
 
-[Basic Linux Privilege Escalation](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/) 
+[Basic Linux Privilege Escalation by g0tm1lk](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/) 
 
 [FuzzySecurity Windows Privilege Escalation Fundamentals](http://www.fuzzysecurity.com/tutorials/16.html)
 
@@ -38,14 +38,30 @@ permalink: /resources/
 
 [GTFOBins - Linux](https://gtfobins.github.io/)
 
+## Web Tools
+
+[XML-RPC Checker](https://xmlrpc.eritreo.it/#)
+
+[Cyberchef](https://gchq.github.io/CyberChef/)
+
+[Shodan](https://www.shodan.io/)
+
+[DNS Dumpster](https://dnsdumpster.com/)
+
+[Crackstation](https://crackstation.net/)
+
+[Mail header analyzer](https://mxtoolbox.com/Public/Tools/EmailHeaders.aspx)
+
+[Host-tracker](https://www.host-tracker.com/InstantCheck)
+
 ## General / Other
 
-[Pentesting tools theyknow ](https://prune2000.github.io/tools/pentest/) 
-
-[Resources Bugcrowd](https://www.bugcrowd.com/resources/)
+[Some Pentesting tools](https://prune2000.github.io/tools/pentest/) 
 
 [GitHub - sbilly/awesome-security](https://github.com/sbilly/awesome-security)
 
 [Markdown Cheatsheet GitHub](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 [Tmux Cheatsheet](https://tmuxcheatsheet.com/)
+
+[Resources Bugcrowd](https://www.bugcrowd.com/resources/)
