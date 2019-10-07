@@ -54,6 +54,10 @@ permalink: /resources/
 
 [Host-tracker](https://www.host-tracker.com/InstantCheck)
 
+## Remove traces
+
+[Log Wiper script for Debian based](https://github.com/breadtk/scripts/blob/master/log_wiper.sh)
+
 ## General / Other
 
 [Some Pentesting tools](https://prune2000.github.io/tools/pentest/) 
