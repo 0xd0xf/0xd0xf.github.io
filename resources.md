@@ -16,6 +16,8 @@ permalink: /resources/
 
 [Nmap Cheatsheet](https://www.stationx.net/nmap-cheat-sheet/)
 
+[Bypass File Upload](https://github.com/xapax/security/blob/master/bypass_image_upload.md)
+
 [All CheatSheets](http://www.cheat-sheets.org/)
 
 ## Recon / Enumeration
@@ -32,15 +34,13 @@ permalink: /resources/
 
 [FuzzySecurity Windows Privilege Escalation Fundamentals](http://www.fuzzysecurity.com/tutorials/16.html)
 
+[GTFOBins - Linux](https://gtfobins.github.io/)
+
 [GitHub - sagishahar/lpeworkshop: Windows / Linux Local Privilege Escalation Workshop](https://github.com/sagishahar/lpeworkshop)
 
 [Windows Privilege Escalation - OSCP Like](https://hackingandsecurity.blogspot.com/2017/09/oscp-windows-priviledge-escalation.html)
 
-[GTFOBins - Linux](https://gtfobins.github.io/)
-
 ## Web Tools
-
-[XML-RPC Checker](https://xmlrpc.eritreo.it/#)
 
 [Cyberchef](https://gchq.github.io/CyberChef/)
 
@@ -48,11 +48,19 @@ permalink: /resources/
 
 [DNS Dumpster](https://dnsdumpster.com/)
 
+[Webhook testing](webhook.site)
+
 [Crackstation](https://crackstation.net/)
 
 [Mail header analyzer](https://mxtoolbox.com/Public/Tools/EmailHeaders.aspx)
 
 [Host-tracker](https://www.host-tracker.com/InstantCheck)
+
+[Explain Shell](https://www.explainshell.com/)
+
+[Crontab explained](https://crontab.guru/)
+
+[XML-RPC Checker](https://xmlrpc.eritreo.it/#)
 
 ## Remove traces
 
