@@ -10,8 +10,8 @@ I work as a penetration tester and I'll try to centralize here all the tools, re
 
 ## Topics I'll discuse
 
-- General Hacking
-- Web Application Tricks
+- Systems and Network
 - Cloud Platforms (Mainly AWS)
 - Active Directory Tools and Tricks
-- Automation tools
+- Web Application Tricks
+- Automation tools / Scripting
