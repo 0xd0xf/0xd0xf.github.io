@@ -22,6 +22,12 @@ permalink: /cheatsheets/
 
 [![Bash Tricks](/images/cheat-sheets/tricks.jpg)](/images/cheat-sheets/tricks.jpg)
 
+## Pentest tools tricks
+
+[![Pentest Tools 1](/images/cheat-sheets/pentest_tools1.jpg)](/images/cheat-sheets/pentest_tools1.jpg)
+
+[![Pentest Tools 2](/images/cheat-sheets/pentest_tools2.jpg)](/images/cheat-sheets/pentest_tools2.jpg)
+
 ## Web Application Methodology
 
 [![WebApp](/images/cheat-sheets/webapp_methodology.jpg)](/images/cheat-sheets/webapp_methodology.jpg)
