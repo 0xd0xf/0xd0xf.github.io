@@ -15,3 +15,5 @@ I work as a penetration tester and I'll try to centralize here all the tools, re
 - Active Directory Tools and Tricks
 - Web Application Tricks
 - Automation tools / Scripting
+
+<script src="https://www.hackthebox.eu/badge/179445"></script>
