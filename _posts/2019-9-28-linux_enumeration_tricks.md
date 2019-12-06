@@ -28,10 +28,10 @@ grep -E -o "\b[a-zA-Z0-9.#?$*_-]+@[a-zA-Z0-9.#?$*_-]+.[a-zA-Z0-9.-]+\b" file
 find /folder -type f 2>/dev/null
 
 # Find setuid files
-find / -perm +4000 -type f 2>/dev/null
+find / -perm -4000 -type f 2>/dev/null
 
 # Find root setuid files
-find / -perm +4000 -uid 0 -type f 2>/dev/null
+find / -perm -4000 -uid 0 -type f 2>/dev/null
 
 # Find writable directories
 find / -perm 777 2>/dev/null
