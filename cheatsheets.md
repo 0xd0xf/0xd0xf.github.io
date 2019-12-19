@@ -12,16 +12,6 @@ permalink: /cheatsheets/
 [![Nmap](/images/cheat-sheets/nmap.png)](/images/cheat-sheets/nmap.png)
 [![Nmap Scripts](/images/cheat-sheets/nmap_scripts.png)](/images/cheat-sheets/nmap_scripts.png)
 
-## HTTP Headers (Credit to Julia Evans)
-
-[![HTTP Headers](/images/cheat-sheets/headers.jpg)](/images/cheat-sheets/headers.jpg)
-
-## Bash tricks
-
-### Some useful tricks can also viewed on my blog post [here]({% post_url 2019-09-28-linux_enumeration_tricks %})
-
-[![Bash Tricks](/images/cheat-sheets/tricks.jpg)](/images/cheat-sheets/tricks.jpg)
-
 ## Pentest tools tricks
 
 [![Pentest Tools 1](/images/cheat-sheets/pentest_tools1.jpg)](/images/cheat-sheets/pentest_tools1.jpg)
@@ -33,7 +23,6 @@ permalink: /cheatsheets/
 [![WebApp](/images/cheat-sheets/webapp_methodology.jpg)](/images/cheat-sheets/webapp_methodology.jpg)
 
 ## Network
-[![Networking Tools](/images/cheat-sheets/networking_tools.jpg)](/images/cheat-sheets/networking_tools.jpg)
 [![Networking Ports](/images/cheat-sheets/common_ports.jpg)](/images/cheat-sheets/common_ports.jpg)
 
 ## Unix
