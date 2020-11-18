@@ -1,7 +1,7 @@
 <h1 align="center">
-  0xd0xF's Personal blog
+  DFul's Personal blog
   <br>
-  https://0xd0xf.github.io
+  https://dful.github.io
 </h1>
 
 I work as a penetration tester and I’ll try to centralize here all the tools, research and other things I use everyday on my work.

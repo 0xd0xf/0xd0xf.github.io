@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This is a simple hacking blog made by 0xd0xf.
+This is a simple hacking blog made by DFul.
 
 I work as a penetration tester and I'll try to centralize here all the tools, research and other things I use everyday on my work.
 

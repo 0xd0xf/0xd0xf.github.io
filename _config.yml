@@ -1,9 +1,9 @@
-title: 0xd0xf Hacking Blog
+title: DFul Hacking Blog
 description: "A simple hacking blog"
 author:
-  name: "0xd0xf"
+  name: "DFul"
   email: ""
-  url: "https://0xd0xf.github.io"
+  url: "https://dful.github.io"
 
 baseurl: /
 
@@ -28,5 +28,5 @@ plugins:
   - jekyll-sitemap
 
 # Custom variables
-owner : "0xd0xf"
-year : "2019"
+owner : "dful"
+year : "2020"
